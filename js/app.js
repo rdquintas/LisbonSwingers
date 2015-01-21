@@ -3,7 +3,7 @@ $(function() {
 
     //adjust the header background image
     // $("#ls-header").backstretch("http://placehold.it/3500x1500", {
-    $("#ls-header").backstretch("img/header-large.jpg", {        
+    $("#ls-header").backstretch("img/header-large.jpg", {
         speed: 150
     });
 
@@ -14,8 +14,11 @@ $(function() {
         if (height > 150) {
             $('#img1').addClass("ls-animated fadeInRight");
         }
-        if (height > 500) {
+        if (height > 350) {
             $('#img2').addClass("ls-animated fadeInLeft");
+        }
+        if (height > 550) {
+            $('#img3').addClass("ls-animated fadeInUp");
         }
     });
 });

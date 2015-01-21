@@ -17,13 +17,15 @@ p {
     top: 0;
     z-index: 1;
     height: 80px;
-    background-color: #000;
+    /*background-color: #000;*/
+    
+    background-color: #AC9360;
     -webkit-box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
 }
 #ls-header {
-    margin-top: 80px;
+    margin-top: 25px;
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -34,8 +36,8 @@ p {
     margin-left: 15%;
     margin-right: 15%;
 }
-#ls-body {
-    /*position: relative;*/
+#ls-body .eight p {
+    margin-top: 13%;
 }
 .ls-animated {
     -webkit-animation-duration: 1500ms;
@@ -43,7 +45,6 @@ p {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-
 @-webkit-keyframes fadeInLeft {
     0% {
         opacity: 0;
@@ -91,4 +92,39 @@ p {
 .fadeInRight {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
+}
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(80px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.cenas {
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+.cenas img {
+    width: 300px;
 }
