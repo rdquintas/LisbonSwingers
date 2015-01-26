@@ -6,12 +6,13 @@
     box-sizing: border-box;
 }
 body {
-    max-width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    width: 100%;
     margin: 0 auto;
     background-color: #fff;
 }
 p {
-    font-size: 24px;
+    font-size: 1.6rem;
 }
 /* HEADER ====================================*/
 
@@ -26,14 +27,30 @@ p {
     -moz-box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
 }
-#ls-ornaments .ornament-1 {
-    position: absolute;
-    top: 10px;
-    z-index: 2;
-    -ms-transform: rotate(7deg);
-    -webkit-transform: rotate(7deg);
-    transform: rotate(7deg);
-    width: 300px;
+#ls-header .logo {
+    position: relative;
+    top: 20px;
+    left: 2%;
+    width: 500px;
+}
+#ls-header .ls-menu {
+    text-align: right !important;
+    position: relative;
+    top: 40px;
+}
+#ls-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#ls-header li {
+    margin-right: 5%;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline;
+}
+#ls-header a {
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 /* HERO ====================================*/
 
@@ -41,17 +58,22 @@ p {
     margin-top: 100px;
     position: relative;
     overflow: hidden;
-    /*height: 100%;*/
-    /*padding-bottom: 20px;*/
-        background-color: #000;
+    background-color: #000;
     -webkit-box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
 }
 #ls-hero img {
     width: 100%;
-    /*border-bottom: 15px solid #666;*/
-
+}
+#ls-hero {
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    -webkit-box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
 }
 /* MAIN CONTAINER ====================================*/
 
@@ -63,6 +85,46 @@ p {
 #ls-body .eight p {
     margin-top: 13%;
 }
+/* THE GUYS ====================================*/
+
+#ls-guys .masonry {
+    background: #fff;
+    margin: 0 auto;
+}
+#ls-guys .masonry-item {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+#ls-guys img {
+    height: 150px;
+    width: 150px;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+#ls-guys img:hover {
+    width: 160px;
+    height: 160px;
+}
+/* AUDIO ====================================*/
+
+#ls-music tr {
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+#ls-music tr:hover {
+    background-color: #CCD
+}
+/* ANIMATIONS ====================================*/
+
 .ls-animated {
     -webkit-animation-duration: 1500ms;
     animation-duration: 1500ms;
