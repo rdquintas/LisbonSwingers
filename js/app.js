@@ -21,27 +21,26 @@ $(function() {
     $('.ls-item-guy').popup();
 
     // Animations (waypoints)
-    var wpImg1 = new Waypoint({
-        element: $('#img1'),
-        handler: function(direction) {
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        if (height <= 0) {
+            $('#img1').removeClass("ls-animated fadeInRight");
+            $('#img2').removeClass("ls-animated fadeInLeft");
+            $('#img3').removeClass("ls-animated fadeInUp");
+        }
+
+        if (height > 100) {
             $('#img1').addClass("ls-animated fadeInRight");
-        },
-        offset: "85%"
-    });
+        }
 
-    var wpImg2 = new Waypoint({
-        element: $('#img2'),
-        handler: function(direction) {
+        if (height > 220) {
             $('#img2').addClass("ls-animated fadeInLeft");
-        },
-        offset: "85%"
+        }
+
+        if (height > 600) {
+            $('#img3').addClass("ls-animated fadeInUp");
+        }
+
     });
 
-    var wpImg3 = new Waypoint({
-        element: $('#img3'),
-        handler: function(direction) {
-            $('#img3').addClass("ls-animated fadeInUp");
-        },
-        offset: "85%"
-    });
 });
