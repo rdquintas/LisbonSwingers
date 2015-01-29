@@ -14,35 +14,32 @@
 
     <style type="text/css">
     #ls-guys {
-        margin: 0 auto;
-
+        margin-left: 15%;
+        margin-right: 15%;
     }
-
-
-#ls-guys .item {
-    /*width: 150px;*/
-    /*height: 150px;*/
-    /*float: left;*/
-    margin-bottom: 5px;
-    overflow: hidden;
-}
-#ls-guys img {
-    /*height: 150px;*/
-    /*width: 150px;*/
-    overflow: hidden;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-#ls-guys img:hover {
-    width: 105%;
-    /*height: 160px;*/
-}
-
-
-
+    #ls-guys .item {
+        /*width: 150px;*/
+        /*height: 150px;*/
+        /*float: left;*/
+        /*margin-bottom: 5px;*/
+        
+        overflow: hidden;
+    }
+    #ls-guys img {
+        /*height: 150px;*/
+        /*width: 150px;*/
+        
+        overflow: hidden;
+        -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        transition: all 300ms ease;
+    }
+    #ls-guys img:hover {
+        width: 105%;
+        /*height: 160px;*/
+    }
     .item,
     .grid-sizer {
         width: 10%;
@@ -59,9 +56,7 @@
     </style>
 </head>
 
-<body>
-
-    </h3>
+<body>    
     <h1 class="ui header">The Guys</h1>
     <section id="ls-guys">
         <div class="item">
@@ -293,9 +288,6 @@
         <div class="item">
             <img class="ls-item-guy" src="img/thumbs_test/15075.jpg" data-title="Rui Gonçalves (trombone)" data-content="" data-variation="inverted">
         </div>
-        <div class="item">
-            <img class="ls-item-guy" src="http://lorempixel.com/g/150/150?76" data-title="Santi Cianci (double bass)" data-content="Santi joined the band in 2012 . He is Italian (1954) and a self-taught electric bass player since he was a teenager. He began to study acoustic double bass in 2011 with the Portuguese musician Rui Silva. He is the CEO of an insurance company." data-variation="inverted">
-        </div>
         <div id="ls-link-menu-1"></div>
 
     </section>
@@ -339,10 +331,10 @@
             var $container = $('#ls-guys');
             $container.imagesLoaded(function() {
                 $container.packery({
-                    itemSelector: '.item',
+                    itemSelector: '.item'
                     // columnWidth: ".grid-sizer"
                     // "isFitWidth": true
-                    gutter: 5
+                    // gutter: 5
                 });
             });
         }
