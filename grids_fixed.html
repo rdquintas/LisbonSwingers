@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/semantic.min.css">
+
+    <style type="text/css">
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    body {
+        margin-top: 50px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #ls-guys {
+        /*margin-left: 15%;*/
+    }
+    #ls-guys .item {
+        /*width: 150px;*/
+        /*height: 150px;*/
+        /*float: left;*/
+        /*margin-bottom: 5px;*/
+        /*margin-bottom: 5px;*/
+        
+        overflow: hidden;
+    }
+    #ls-guys img {
+        /*height: 150px;*/
+        /*width: 150px;*/
+        /*overflow: hidden;*/
+        
+        -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        transition: all 300ms ease;
+    }
+    #ls-guys img:hover {
+        -ms-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+    }
+    .item {
+        /*width: 20%;*/
+        margin-bottom: -4px;
+        width: 150px;
+    }
+    .item.big {
+        width: 20%;
+    }
+    .item.small {
+        width: 5%;
+    }
+    .item img {
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <h1 class="ui header">The Guys</h1>
+    <p>Este exemplo mostra as fotos de cada um de forma fluida.</p>
+    <section id="ls-guys">
+        <div class="item">
+            <img src="img/thumbs_test/15001.jpg" data-title="Ant&oacute;nio Barbosa (alto sax and piano)" data-content="He is a University Professor." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15002.jpg" data-title="Claus Nymark (director)" data-content="Claus Nymark was born on the outskirts of Copenhagen, Denmark in 1966 and began to play trombone at age 15. He holds a MA degree in music and another in musical education. Since moving to Portugal in 1986 he has maintained a busy schedule playing and teaching in several Jazz Schools around the country. At present he is teaching at The University of Évora and conducts several big bands, among them Lisbon Swingers which he has been conducting for over 15 years.
+                " data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15003.jpg" data-title="Daniel Hewson (trombone)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15004.jpg" data-title="Gon&ccedil;alo Marques (trombone)" data-content="He is an euphonium player/teacher. He graduated from the Escola Superior de Música de Lisboa, but has always had some curiosity about trombone and jazz music. Gonçalo plays the euphonium in the Portuguese Air Force Band and the trombone in the Lisbon Swingers Big Band. At the same time, he teaches euphonium in the Escola Professional Metropolitana and the Academia de Música de Óbidos." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15005.jpg" data-title="Ivo Rodrigues (trumpet)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15006.jpg" data-title="Jo&atilde;o Capinha (alto sax)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15007.jpg" data-title="Jo&atilde;o Viana (trumpet)" data-content="João Viana is a doctor in medicine and a self-taught amateur trumpet player. The “Dixie Gang”, the oldest traditional jazz band in Portugal that he co-founded 23 years ago, is his main musical activity. For him, the pleasure of playing with the Lisbon Swingers comes not only from its repertoire, but also from the challenging technical and musical reading skills it demands." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15008.jpg" data-title="Jos&eacute; Mata (guitar)" data-content="Plays the guitar in the band. He is a University Professor in the Area of Business." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15009.jpg" data-title="Lino Lisboa (trumpet)" data-content="Born in 1981 Lino is a Trumpet player from Lisbon. He started learning music when he was 10 years old at the Lisbon Music School, EMCN with teacher José Augusto Carneiro, also did some graduate studies at Évora University. Plays professionally in the Portuguese Air Force Band." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15010.jpg" data-title="Luciano Amaral (singer)" data-content="He has studied for a few years, in the mid 1990s, at the Jazz School of HCP (Hot Club de Portugal) where he was a member of the students big band as a singer. His profession has nothing to do with music; he teaches in a University." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15011.jpg" data-title="Luis Martins (sax baritone)" data-content="Started to play saxophone in a local wind Band. His first musical school was the Escola Profissional de Música de Almada, where he took lessons with Mário Marques, Hugo Gaito, Armindo Luis and finally Pedro Silva. Luis has a degree in Music performance: Saxophone, from University of Évora. He teaches classical saxophone at some music schools, and is a member of the Portuguese Air Force Band." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15012.jpg" data-title="Manuel Barbosa (tenor sax)" data-content="A retired professor of Economics" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15013.jpg" data-title="Miguel Gon&ccedil;alves (trumpet)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15014.jpg" data-title="Miguel Viana (tenor and alto sax)" data-content="He is a self-taught Jazz Musician. He works as an HR Director." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15015.jpg" data-title="Pedro Madeira (drums)" data-content="Music studies: Jazz School Luiz Villas-Boas / Hot Club de Portugal and Escola Superior de Música de Lisboa (Jazz Bachelor) “When I was 18 years old, I had my first experience with drums. Since then, I knew that music would fulfill my personal and professional life till the end of my days.”" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15016.jpg" data-title="Ricardo Quintas (clarinet)" data-content="Plays the Clarinet. He learned music at the Jazz School of HCP (Hot Club de Portugal). Works as a frelance IT consultant around the world." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15017.jpg" data-title="Rui Caetano (piano)" data-content="Rui Caetano started his musical studies at the age of ten, by having private classical piano lessons, in Portugal. After graduating from the Jazz and Contemporary Music Program at the New School, in New York, in the year 2000, he returned to Portugal where has been teaching and playing in several projects and events of the Portuguese Jazz scene, including the Lisbon Swingers Orchestra." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15018.jpg" data-title="Rui Gonçalves (trombone)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15019.jpg" data-title="Santi Cianci (double bass)" data-content="Santi joined the band in 2012 . He is Italian (1954) and a self-taught electric bass player since he was a teenager. He began to study acoustic double bass in 2011 with the Portuguese musician Rui Silva. He is the CEO of an insurance company." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15020.jpg" data-title="Ant&oacute;nio Barbosa (alto sax and piano)" data-content="He is a University Professor." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15021.jpg" data-title="Claus Nymark (director)" data-content="Claus Nymark was born on the outskirts of Copenhagen, Denmark in 1966 and began to play trombone at age 15. He holds a MA degree in music and another in musical education. Since moving to Portugal in 1986 he has maintained a busy schedule playing and teaching in several Jazz Schools around the country. At present he is teaching at The University of Évora and conducts several big bands, among them Lisbon Swingers which he has been conducting for over 15 years.
+                " data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15022.jpg" data-title="Daniel Hewson (trombone)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15023.jpg" data-title="Gon&ccedil;alo Marques (trombone)" data-content="He is an euphonium player/teacher. He graduated from the Escola Superior de Música de Lisboa, but has always had some curiosity about trombone and jazz music. Gonçalo plays the euphonium in the Portuguese Air Force Band and the trombone in the Lisbon Swingers Big Band. At the same time, he teaches euphonium in the Escola Professional Metropolitana and the Academia de Música de Óbidos." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15024.jpg" data-title="Ivo Rodrigues (trumpet)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15025.jpg" data-title="Jo&atilde;o Capinha (alto sax)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15026.jpg" data-title="Jo&atilde;o Viana (trumpet)" data-content="João Viana is a doctor in medicine and a self-taught amateur trumpet player. The “Dixie Gang”, the oldest traditional jazz band in Portugal that he co-founded 23 years ago, is his main musical activity. For him, the pleasure of playing with the Lisbon Swingers comes not only from its repertoire, but also from the challenging technical and musical reading skills it demands." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15027.jpg" data-title="Jos&eacute; Mata (guitar)" data-content="Plays the guitar in the band. He is a University Professor in the Area of Business." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15028.jpg" data-title="Lino Lisboa (trumpet)" data-content="Born in 1981 Lino is a Trumpet player from Lisbon. He started learning music when he was 10 years old at the Lisbon Music School, EMCN with teacher José Augusto Carneiro, also did some graduate studies at Évora University. Plays professionally in the Portuguese Air Force Band." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15029.jpg" data-title="Luciano Amaral (singer)" data-content="He has studied for a few years, in the mid 1990s, at the Jazz School of HCP (Hot Club de Portugal) where he was a member of the students big band as a singer. His profession has nothing to do with music; he teaches in a University." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15030.jpg" data-title="Luis Martins (sax baritone)" data-content="Started to play saxophone in a local wind Band. His first musical school was the Escola Profissional de Música de Almada, where he took lessons with Mário Marques, Hugo Gaito, Armindo Luis and finally Pedro Silva. Luis has a degree in Music performance: Saxophone, from University of Évora. He teaches classical saxophone at some music schools, and is a member of the Portuguese Air Force Band." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15031.jpg" data-title="Manuel Barbosa (tenor sax)" data-content="A retired professor of Economics" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15032.jpg" data-title="Miguel Gon&ccedil;alves (trumpet)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15033.jpg" data-title="Miguel Viana (tenor and alto sax)" data-content="He is a self-taught Jazz Musician. He works as an HR Director." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15034.jpg" data-title="Pedro Madeira (drums)" data-content="Music studies: Jazz School Luiz Villas-Boas / Hot Club de Portugal and Escola Superior de Música de Lisboa (Jazz Bachelor) “When I was 18 years old, I had my first experience with drums. Since then, I knew that music would fulfill my personal and professional life till the end of my days.”" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15035.jpg" data-title="Ricardo Quintas (clarinet)" data-content="Plays the Clarinet. He learned music at the Jazz School of HCP (Hot Club de Portugal). Works as a frelance IT consultant around the world." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15036.jpg" data-title="Rui Caetano (piano)" data-content="Rui Caetano started his musical studies at the age of ten, by having private classical piano lessons, in Portugal. After graduating from the Jazz and Contemporary Music Program at the New School, in New York, in the year 2000, he returned to Portugal where has been teaching and playing in several projects and events of the Portuguese Jazz scene, including the Lisbon Swingers Orchestra." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15037.jpg" data-title="Rui Gonçalves (trombone)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15038.jpg" data-title="Santi Cianci (double bass)" data-content="Santi joined the band in 2012 . He is Italian (1954) and a self-taught electric bass player since he was a teenager. He began to study acoustic double bass in 2011 with the Portuguese musician Rui Silva. He is the CEO of an insurance company." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15039.jpg" data-title="Ant&oacute;nio Barbosa (alto sax and piano)" data-content="He is a University Professor." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15040.jpg" data-title="Claus Nymark (director)" data-content="Claus Nymark was born on the outskirts of Copenhagen, Denmark in 1966 and began to play trombone at age 15. He holds a MA degree in music and another in musical education. Since moving to Portugal in 1986 he has maintained a busy schedule playing and teaching in several Jazz Schools around the country. At present he is teaching at The University of Évora and conducts several big bands, among them Lisbon Swingers which he has been conducting for over 15 years.
+                " data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15041.jpg" data-title="Daniel Hewson (trombone)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15042.jpg" data-title="Gon&ccedil;alo Marques (trombone)" data-content="He is an euphonium player/teacher. He graduated from the Escola Superior de Música de Lisboa, but has always had some curiosity about trombone and jazz music. Gonçalo plays the euphonium in the Portuguese Air Force Band and the trombone in the Lisbon Swingers Big Band. At the same time, he teaches euphonium in the Escola Professional Metropolitana and the Academia de Música de Óbidos." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15043.jpg" data-title="Ivo Rodrigues (trumpet)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15044.jpg" data-title="Jo&atilde;o Capinha (alto sax)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15045.jpg" data-title="Jo&atilde;o Viana (trumpet)" data-content="João Viana is a doctor in medicine and a self-taught amateur trumpet player. The “Dixie Gang”, the oldest traditional jazz band in Portugal that he co-founded 23 years ago, is his main musical activity. For him, the pleasure of playing with the Lisbon Swingers comes not only from its repertoire, but also from the challenging technical and musical reading skills it demands." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15046.jpg" data-title="Jos&eacute; Mata (guitar)" data-content="Plays the guitar in the band. He is a University Professor in the Area of Business." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15047.jpg" data-title="Lino Lisboa (trumpet)" data-content="Born in 1981 Lino is a Trumpet player from Lisbon. He started learning music when he was 10 years old at the Lisbon Music School, EMCN with teacher José Augusto Carneiro, also did some graduate studies at Évora University. Plays professionally in the Portuguese Air Force Band." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15048.jpg" data-title="Luciano Amaral (singer)" data-content="He has studied for a few years, in the mid 1990s, at the Jazz School of HCP (Hot Club de Portugal) where he was a member of the students big band as a singer. His profession has nothing to do with music; he teaches in a University." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15049.jpg" data-title="Luis Martins (sax baritone)" data-content="Started to play saxophone in a local wind Band. His first musical school was the Escola Profissional de Música de Almada, where he took lessons with Mário Marques, Hugo Gaito, Armindo Luis and finally Pedro Silva. Luis has a degree in Music performance: Saxophone, from University of Évora. He teaches classical saxophone at some music schools, and is a member of the Portuguese Air Force Band." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15050.jpg" data-title="Manuel Barbosa (tenor sax)" data-content="A retired professor of Economics" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15051.jpg" data-title="Miguel Gon&ccedil;alves (trumpet)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15052.jpg" data-title="Miguel Viana (tenor and alto sax)" data-content="He is a self-taught Jazz Musician. He works as an HR Director." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15053.jpg" data-title="Pedro Madeira (drums)" data-content="Music studies: Jazz School Luiz Villas-Boas / Hot Club de Portugal and Escola Superior de Música de Lisboa (Jazz Bachelor) “When I was 18 years old, I had my first experience with drums. Since then, I knew that music would fulfill my personal and professional life till the end of my days.”" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15054.jpg" data-title="Ricardo Quintas (clarinet)" data-content="Plays the Clarinet. He learned music at the Jazz School of HCP (Hot Club de Portugal). Works as a frelance IT consultant around the world." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15055.jpg" data-title="Rui Caetano (piano)" data-content="Rui Caetano started his musical studies at the age of ten, by having private classical piano lessons, in Portugal. After graduating from the Jazz and Contemporary Music Program at the New School, in New York, in the year 2000, he returned to Portugal where has been teaching and playing in several projects and events of the Portuguese Jazz scene, including the Lisbon Swingers Orchestra." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15056.jpg" data-title="Rui Gonçalves (trombone)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15057.jpg" data-title="Santi Cianci (double bass)" data-content="Santi joined the band in 2012 . He is Italian (1954) and a self-taught electric bass player since he was a teenager. He began to study acoustic double bass in 2011 with the Portuguese musician Rui Silva. He is the CEO of an insurance company." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15058.jpg" data-title="Ant&oacute;nio Barbosa (alto sax and piano)" data-content="He is a University Professor." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15059.jpg" data-title="Claus Nymark (director)" data-content="Claus Nymark was born on the outskirts of Copenhagen, Denmark in 1966 and began to play trombone at age 15. He holds a MA degree in music and another in musical education. Since moving to Portugal in 1986 he has maintained a busy schedule playing and teaching in several Jazz Schools around the country. At present he is teaching at The University of Évora and conducts several big bands, among them Lisbon Swingers which he has been conducting for over 15 years.
+                " data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15060.jpg" data-title="Daniel Hewson (trombone)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15061.jpg" data-title="Gon&ccedil;alo Marques (trombone)" data-content="He is an euphonium player/teacher. He graduated from the Escola Superior de Música de Lisboa, but has always had some curiosity about trombone and jazz music. Gonçalo plays the euphonium in the Portuguese Air Force Band and the trombone in the Lisbon Swingers Big Band. At the same time, he teaches euphonium in the Escola Professional Metropolitana and the Academia de Música de Óbidos." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15062.jpg" data-title="Ivo Rodrigues (trumpet)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15063.jpg" data-title="Jo&atilde;o Capinha (alto sax)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15064.jpg" data-title="Jo&atilde;o Viana (trumpet)" data-content="João Viana is a doctor in medicine and a self-taught amateur trumpet player. The “Dixie Gang”, the oldest traditional jazz band in Portugal that he co-founded 23 years ago, is his main musical activity. For him, the pleasure of playing with the Lisbon Swingers comes not only from its repertoire, but also from the challenging technical and musical reading skills it demands." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15065.jpg" data-title="Jos&eacute; Mata (guitar)" data-content="Plays the guitar in the band. He is a University Professor in the Area of Business." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15066.jpg" data-title="Lino Lisboa (trumpet)" data-content="Born in 1981 Lino is a Trumpet player from Lisbon. He started learning music when he was 10 years old at the Lisbon Music School, EMCN with teacher José Augusto Carneiro, also did some graduate studies at Évora University. Plays professionally in the Portuguese Air Force Band." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15067.jpg" data-title="Luciano Amaral (singer)" data-content="He has studied for a few years, in the mid 1990s, at the Jazz School of HCP (Hot Club de Portugal) where he was a member of the students big band as a singer. His profession has nothing to do with music; he teaches in a University." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15068.jpg" data-title="Luis Martins (sax baritone)" data-content="Started to play saxophone in a local wind Band. His first musical school was the Escola Profissional de Música de Almada, where he took lessons with Mário Marques, Hugo Gaito, Armindo Luis and finally Pedro Silva. Luis has a degree in Music performance: Saxophone, from University of Évora. He teaches classical saxophone at some music schools, and is a member of the Portuguese Air Force Band." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15069.jpg" data-title="Manuel Barbosa (tenor sax)" data-content="A retired professor of Economics" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15070.jpg" data-title="Miguel Gon&ccedil;alves (trumpet)" data-content="" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15071.jpg" data-title="Miguel Viana (tenor and alto sax)" data-content="He is a self-taught Jazz Musician. He works as an HR Director." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15072.jpg" data-title="Pedro Madeira (drums)" data-content="Music studies: Jazz School Luiz Villas-Boas / Hot Club de Portugal and Escola Superior de Música de Lisboa (Jazz Bachelor) “When I was 18 years old, I had my first experience with drums. Since then, I knew that music would fulfill my personal and professional life till the end of my days.”" data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15073.jpg" data-title="Ricardo Quintas (clarinet)" data-content="Plays the Clarinet. He learned music at the Jazz School of HCP (Hot Club de Portugal). Works as a frelance IT consultant around the world." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15074.jpg" data-title="Rui Caetano (piano)" data-content="Rui Caetano started his musical studies at the age of ten, by having private classical piano lessons, in Portugal. After graduating from the Jazz and Contemporary Music Program at the New School, in New York, in the year 2000, he returned to Portugal where has been teaching and playing in several projects and events of the Portuguese Jazz scene, including the Lisbon Swingers Orchestra." data-variation="inverted">
+        </div>
+        <div class="item">
+            <img src="img/thumbs_test/15075.jpg" data-title="Rui Gonçalves (trombone)" data-content="" data-variation="inverted">
+        </div>
+        <div id="ls-link-menu-1"></div>
+
+    </section>
+
+
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/semantic.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/packery.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+    $(function() {
+        var _iv_normal = 20; // random percent for NORMAL squares
+        var _iv_small = 70; // random percent for SMALL squares
+        var _iv_big = 10; // random percent for BIG squares
+
+        randomizeDIVs();
+        doReflow();
+
+
+        function randomizeDIVs() {
+            var cards = $(".item");
+            $.each(cards, function(key, value) {
+                $(this).addClass(randomizeDivSize());
+                var target = Math.floor(Math.random() * cards.length - 1) + 1;
+                var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
+                cards.eq(target).before(cards.eq(target2));
+
+            });
+
+            // for (var i = 0; i < cards.length; i++) {
+            //     cards[i].addClass("caralho");
+            //     var target = Math.floor(Math.random() * cards.length - 1) + 1;
+            //     var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
+            //     cards.eq(target).before(cards.eq(target2));
+            // }
+        }
+
+        function doReflow() {
+            var $container = $('#ls-guys');
+            $container.imagesLoaded(function() {
+                $container.packery({
+                    itemSelector: '.item',
+                    isFitWidth: true,
+                    gutter: 5
+                    // columnWidth: ".grid-sizer"
+                });
+            });
+        }
+
+        function randomizeDivSize() {
+            // var rnd = Math.floor((Math.random() * 100) + 1);
+            var boxSize = "item";
+
+            // if (rnd >= 0 && rnd < _iv_normal) {
+            //     boxSize = "item";
+            // }
+
+            // if (rnd >= _iv_normal && rnd < _iv_normal + _iv_small) {
+            //     boxSize = "item small";
+            // }
+
+            // if (rnd >= _iv_normal + _iv_small && rnd <= _iv_normal + _iv_small + _iv_big) {
+            //     boxSize = "item big";
+            // }
+
+            return boxSize;
+        }
+
+    });
+
+
+
+
+
+    // masonry
+    // var $container = $('#ls-guys');
+    // $container.imagesLoaded(function() {
+    //     // $container.masonry({
+    //     //     "isFitWidth": true,
+    //     //     "gutter": 5
+    //     // });
+    //     $container.packery({
+    //         // columnWidth: 300,
+    //         gutter: 5,
+    //         itemSelector: '.item'
+    //     });
+    // });
+
+    // Poppups
+    $('img').popup();
+    </script>
+
+</body>
+
+
+</html>
