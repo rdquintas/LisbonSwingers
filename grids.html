@@ -190,7 +190,7 @@
 
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/semantic.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
     <script src="js/packery.pkgd.min.js"></script>
     <!-- <script src="js/masonry.pkgd.min.js"></script> -->
 
@@ -200,12 +200,27 @@
         var _iv_small = 90; // random percent for SMALL squares
         var _iv_big = 3; // random percent for BIG squares
 
-        randomizeDIVs();
-        doReflow();
+        //Check images loaded
+        var cnt = $("img").length;
+        $("img").one("load", function() {
+            cnt--;
+
+            // If all images are loaded, init Packery
+            if (cnt === 0) {
+                randomizeDIVs();
+                doReflow();
+            }
+
+        }).each(function() {
+            if (this.complete) $(this).load();
+        });
+
+        // randomizeDIVs();
+        // doReflow();
 
 
         $(window).resize(function() {
-            location.reload(true);
+            // location.reload(true);
         });
 
 
@@ -228,7 +243,7 @@
 
         function doReflow() {
             var $container = $('#ls-guys');
-            $container.imagesLoaded(function() {
+            // $container.imagesLoaded(function() {
                 $container.packery({
                     itemSelector: '.masonry-item'
                         // gutter: 0
@@ -236,8 +251,7 @@
                         // "isFitWidth": true
 
                 });
-            });
-
+            // });
         }
 
         function randomizeDivSize() {
