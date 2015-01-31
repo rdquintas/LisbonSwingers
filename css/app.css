@@ -27,11 +27,12 @@ p {
     -moz-box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
 }
-#ls-header .logo {
+#ls-header img {
     position: relative;
-    top: 20px;
-    left: 2%;
-    width: 500px;
+    height: auto;
+    top: 10px;
+    margin-left: 2%;
+    max-width: 100%;
 }
 #ls-header .ls-menu {
     text-align: right !important;
