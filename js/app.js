@@ -1,5 +1,13 @@
 $(function() {
 
+    // Side-Bar
+
+
+    $('#toggle-icon').on("click", function(e) {
+        e.preventDefault();
+        $('.ui.sidebar').sidebar('toggle');
+    });
+
     // Scroll-tos
     $('.ls-link-menu-1').on("click", function(e) {
         e.preventDefault();
