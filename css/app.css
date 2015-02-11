@@ -4,15 +4,16 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 body {
-    font-family: 'Libre Baskerville', serif;
     width: 100%;
+    z-index: 0;
     margin: 0 auto;
     background-color: #fff;
 }
 p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 /* GLOBAL VAR ====================================*/
 
@@ -21,6 +22,9 @@ p {
 }
 .text_right {
     text-align: right;
+}
+.hide {
+    display: none;
 }
 /* HEADER ====================================*/
 
@@ -35,6 +39,11 @@ p {
     -moz-box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 6px 12px -4px rgba(0, 0, 0, 0.75);
 }
+#ls-header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 #ls-header .col1 {
     float: left;
     width: 40%;
@@ -48,7 +57,10 @@ p {
     position: relative;
     top: 40px;
 }
-#ls-header img {
+#ls-header .col1 .toggle-icon {
+    display: none;
+}
+#ls-header .col1 img {
     position: relative;
     top: 20px;
     margin-left: 20px;
@@ -66,10 +78,16 @@ p {
     display: inline;
 }
 #ls-header a {
-    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
-#ls-header .toggle {
-    display: none;
+#ls-header a:hover {
+    color: #666;
+}
+#ls-header i {
+    margin-top: -2px;
+    font-size: 2rem;
 }
 /* HERO ====================================*/
 
@@ -86,7 +104,7 @@ p {
     width: 100%;
 }
 #ls-hero {
-    margin-top: 100px;
+    margin-top: 80px;
     position: relative;
     overflow: hidden;
     background-color: #000;
@@ -239,14 +257,10 @@ p {
 }
 /* MEDIA QUERIES ====================================*/
 
-@media (max-width: 850px) {
-    #ls-header img {
-        width: 360px;
-        top: 29px;
-        margin-left: 20px;
-    }
-}
 @media (max-width: 700px) {
+    body{
+        background-color: yellow;
+    }
     #ls-hero {
         margin-top: 50px;
     }
@@ -259,24 +273,26 @@ p {
     #ls-header .col2 {
         display: none;
     }
-    #ls-header .toggle {
-        margin-top: 12px;
-        margin-left: 15px;
-        display: block;
-        float: left;
-        width: 5%
-    }
     #ls-header .col1 {
-        display: none;
         width: 95%;
     }
-    #ls-header img {
-        max-width: 90%;
+    #ls-header .col1 img {
+        width: 100%;
         top: 29px;
         margin-left: 15px;
     }
     p {
         text-align: left;
+    }
+}
+@media (max-width: 850px) {
+    body{
+        background-color: red;
+    }
+    #ls-header .col1 img {
+        width: 350px;
+        top: 29px;
+        margin-left: 20px;
     }
 }
 @media (max-width: 1100px) {
