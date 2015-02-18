@@ -1,3 +1,16 @@
+
+E isto que quero fazer!!!! http://davidwalsh.name/demo/css-fixed-position.php
+
+
+http://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/
+
+Mix FIXED with %
+http://stackoverflow.com/questions/10651646/creating-a-mixed-pixel-percentage-layout-with-divs
+http://stackoverflow.com/questions/11088855/css-combining-and-px-width
+http://stackoverflow.com/questions/3600204/mixing-percent-and-fixed-css
+**************************************************************************
+
+
 http://stackoverflow.com/questions/26335347/packery-and-imagesloaded-plugin-not-working
 
 $(document).ready(function(){
