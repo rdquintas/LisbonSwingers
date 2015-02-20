@@ -1,4 +1,13 @@
 
+Fazer Long Shadow
+https://www.youtube.com/watch?v=k51omej0wb4
+http://design.tutsplus.com/tutorials/4-ways-to-create-long-shadow-effects-in-photoshop--psd-30308
+**************************************************************************
+
+http://www.akqa.com/
+http://www.akqa.com/services/
+**************************************************************************
+
 E isto que quero fazer!!!! http://davidwalsh.name/demo/css-fixed-position.php
 
 
