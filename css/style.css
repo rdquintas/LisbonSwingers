@@ -87,7 +87,7 @@ h6 {
     opacity: 1;
 }
 #module-header .logo {
-    width: 400px;
+    width: 450px;
     margin-left: -2px;
 }
 #module-header ul {
@@ -331,9 +331,29 @@ h6 {
   MODULE GUYS
 ============================================================================= */
 
-#module-guys {
-    color: #fff;
-    background-color: #000;
+#module-guys .container .item {
+    overflow: hidden;
+}
+#module-guys .container img {
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+#module-guys .container img:hover {
+    width: 105%;
+}
+.container .item {
+    width: 20%;
+}
+.container .item-big {
+    width: 30%;
+}
+.container .item-small {
+    width: 10%;
 }
 /* =============================================================================
   MEDIA QUERIES
