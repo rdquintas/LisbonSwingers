@@ -13,8 +13,8 @@ $(document).ready(function() {
 
         // If all images are loaded, init Packery
         if (cnt === 0) {
-            randomizeDIVs();
-            doReflow();
+            // randomizeDIVs();
+            // doReflow();
         }
 
     }).each(function() {
@@ -39,7 +39,7 @@ $(document).ready(function() {
             var arr = aaa.split("px");
             aaa = arr[0] - 5;
             aaa = aaa + "px";
-            $(this).css("height", aaa);
+            // $(this).css("height", aaa);
 
             var target = Math.floor(Math.random() * cards.length - 1) + 1;
             var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
@@ -67,13 +67,14 @@ $(document).ready(function() {
         }
 
         if (rnd >= _iv_normal && rnd < _iv_normal + _iv_small) {
-            boxSize = "item-small";
+            boxSize = "item small";
         }
 
         if (rnd >= _iv_normal + _iv_small && rnd <= _iv_normal + _iv_small + _iv_big) {
-            boxSize = "item-big";
+            boxSize = "item big";
         }
 
+ boxSize = "item small";
         return boxSize;
     }
 

@@ -2,6 +2,9 @@
 Fazer Long Shadow
 https://www.youtube.com/watch?v=k51omej0wb4
 http://design.tutsplus.com/tutorials/4-ways-to-create-long-shadow-effects-in-photoshop--psd-30308
+
+Zoom das imagens sem sair do DIV
+http://designshack.net/articles/css/joshuajohnson-2/
 **************************************************************************
 
 http://www.akqa.com/

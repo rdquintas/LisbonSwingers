@@ -347,13 +347,24 @@ h6 {
     width: 105%;
 }
 .container .item {
-    width: 20%;
+    /*width: 20%;*/
+    
+    width: 10%;
+    float: left;
 }
 .container .item-big {
     width: 30%;
 }
 .container .item-small {
     width: 10%;
+}
+.container .item {
+    float: left;
+    width: 25%;
+}
+#module-guys .container img {
+    display: block;
+    width: 100%;
 }
 /* =============================================================================
   MEDIA QUERIES
