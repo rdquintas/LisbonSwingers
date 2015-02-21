@@ -45,6 +45,28 @@ h6 {
     margin-bottom: 0.5rem;
     line-height: 1.1;
 }
+.tooltipsy {
+    padding: 10px;
+    max-width: 280px;
+    font-size: 15px;
+    color: #000;
+    background-color: #939393;
+    border: 1px solid #ACACAC;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    text-shadow: none;
+}
+.tooltipsy .title {
+    font-weight: 700;
+}
+.tooltipsy .www {
+    font-weight: 700;
+    text-decoration: none;
+}
+.tooltipsy .www:hover {
+    color: #fff;
+}
 /* =============================================================================
   GLOBAL ANIMATIONS
 ============================================================================= */
@@ -136,28 +158,15 @@ h6 {
     animation-name: fadeInUp;
 }
 /* =============================================================================
-  MODULE QUOTE 1
+  MODULE QUOTES
 ============================================================================= */
 
-#module-quote-1 {
+[id*='module-quote-'] {
     margin: 100px 200px 100px 200px;
     text-align: center;
     color: #838383;
 }
-#module-quote-1 h1 {
-    font-weight: 300;
-    line-height: 1.3;
-}
-/* =============================================================================
-  MODULE QUOTE 2
-============================================================================= */
-
-#module-quote-2 {
-    margin: 100px 200px 100px 200px;
-    text-align: center;
-    color: #838383;
-}
-#module-quote-2 h1 {
+[id*='module-quote-'] h1 {
     font-weight: 300;
     line-height: 1.3;
 }
@@ -331,40 +340,38 @@ h6 {
   MODULE GUYS
 ============================================================================= */
 
+#module-guys .container {
+    width: 80%;
+    margin: 0 auto;
+}
 #module-guys .container .item {
     overflow: hidden;
+    cursor: pointer;
 }
 #module-guys .container img {
     width: 100%;
     overflow: hidden;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    transition: all 300ms ease;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    transition: all 200ms ease;
 }
 #module-guys .container img:hover {
     width: 105%;
 }
 .container .item {
-    /*width: 20%;*/
-    
-    width: 10%;
+    overflow: hidden;
     float: left;
 }
-.container .item-big {
+#module-guys .container .size-small {
+    width: 10%;
+}
+#module-guys .container .size-normal {
+    width: 20%;
+}
+#module-guys .container .size-big {
     width: 30%;
-}
-.container .item-small {
-    width: 10%;
-}
-.container .item {
-    float: left;
-    width: 25%;
-}
-#module-guys .container img {
-    display: block;
-    width: 100%;
 }
 /* =============================================================================
   MEDIA QUERIES
