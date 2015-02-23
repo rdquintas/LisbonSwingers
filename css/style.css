@@ -45,6 +45,7 @@ h6 {
     margin-bottom: 0.5rem;
     line-height: 1.1;
 }
+/*
 .tooltipsy {
     padding: 10px;
     max-width: 280px;
@@ -66,6 +67,16 @@ h6 {
 }
 .tooltipsy .www:hover {
     color: #fff;
+}*/
+
+.quote {
+    margin: 100px 200px 100px 200px;
+    text-align: center;
+    color: #838383;
+}
+.quote h1 {
+    font-weight: 300;
+    line-height: 1.3;
 }
 /* =============================================================================
   GLOBAL ANIMATIONS
@@ -156,19 +167,6 @@ h6 {
 #module-hero.animated.fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-}
-/* =============================================================================
-  MODULE QUOTES
-============================================================================= */
-
-[id*='module-quote-'] {
-    margin: 100px 200px 100px 200px;
-    text-align: center;
-    color: #838383;
-}
-[id*='module-quote-'] h1 {
-    font-weight: 300;
-    line-height: 1.3;
 }
 /* =============================================================================
   MODULE PHOTOS 1
@@ -340,12 +338,14 @@ h6 {
   MODULE GUYS
 ============================================================================= */
 
-#module-guys .container {
-    width: 80%;
-    margin: 0 auto;
+#module-guys h1 {
+    margin: 50px 200px 50px 200px;
+    text-align: center;
+    color: #838383;
+    font-weight: 300;
+    line-height: 1.3;
 }
 #module-guys .container .item {
-    overflow: hidden;
     cursor: pointer;
 }
 #module-guys .container img {
@@ -372,6 +372,59 @@ h6 {
 }
 #module-guys .container .size-big {
     width: 30%;
+}
+#module-guys .tooltip {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: -10px;
+    padding: 10px;
+    width: 280px;
+    font-size: 15px;
+    color: #000;
+    background-color: #939393;
+    border: 1px solid #ACACAC;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    text-shadow: none;
+}
+#module-guys .tooltip .title {
+    font-weight: 700;
+    float: left;
+    margin: 0;
+}
+#module-guys .tooltip .desc {
+    clear: both;
+}
+#module-guys .tooltip i {
+    margin-top: -7px;
+    margin-right: -6px;
+    float: right;
+}
+#module-guys .tooltip i:hover {
+    color: #fff;
+}
+#module-guys .tooltip .www {
+    font-weight: 700;
+    text-decoration: none;
+}
+#module-guys .tooltip .www:hover {
+    color: #fff;
+}
+/* =============================================================================
+  MODULE MUSIC
+============================================================================= */
+
+#module-music {
+    background-color: #000;
+}
+#module-music h1 {
+    margin: 50px 200px 50px 200px;
+    text-align: center;
+    color: #838383;
+    font-weight: 300;
+    line-height: 1.3;
 }
 /* =============================================================================
   MEDIA QUERIES

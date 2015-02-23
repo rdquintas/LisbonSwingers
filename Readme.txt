@@ -1,3 +1,10 @@
+Tooltips
+http://cbracco.me/a-simple-css-tooltip/
+http://codepen.io/cbracco/pen/qzukg
+http://www.menucool.com/tooltip/css-tooltip
+http://www.webdesignerdepot.com/2012/11/how-to-create-a-simple-css3-tooltip/
+
+**************************************************************************
 
 Fazer Long Shadow
 https://www.youtube.com/watch?v=k51omej0wb4
