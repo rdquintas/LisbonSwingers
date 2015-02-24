@@ -16,7 +16,7 @@ $(document).ready(function() {
         e.preventDefault();
         $('#module-music').ScrollTo({
             duration: 500,
-            easing: 'linear'
+            easing: 'linear',
         });
     });
 
