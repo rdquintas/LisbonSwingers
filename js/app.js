@@ -20,6 +20,14 @@ $(document).ready(function() {
         });
     });
 
+    $("#module-header .contacts").on("click", function(e) {
+        e.preventDefault();
+        $('#module-contacts').ScrollTo({
+            duration: 500,
+            easing: 'linear',
+        });
+    });
+
     $("#module-header").addClass('show');
     $("#module-hero").addClass('fadeInUp');
 
@@ -463,5 +471,9 @@ $(document).scroll(function() {
     if (y > 1550) {
         $("#module-photos-2 .img1").addClass('fadeInUp');
         $("#module-photos-2 .img2").addClass('fadeInUp');
+    }
+
+    if (y > 4900) {
+        $("#module-contacts .img1").addClass('fadeInUp');
     }
 });

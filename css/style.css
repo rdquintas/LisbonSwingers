@@ -45,30 +45,6 @@ h6 {
     margin-bottom: 0.5rem;
     line-height: 1.1;
 }
-/*
-.tooltipsy {
-    padding: 10px;
-    max-width: 280px;
-    font-size: 15px;
-    color: #000;
-    background-color: #939393;
-    border: 1px solid #ACACAC;
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    -box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    text-shadow: none;
-}
-.tooltipsy .title {
-    font-weight: 700;
-}
-.tooltipsy .www {
-    font-weight: 700;
-    text-decoration: none;
-}
-.tooltipsy .www:hover {
-    color: #fff;
-}*/
-
 .quote {
     margin: 100px 200px 100px 200px;
     text-align: center;
@@ -122,6 +98,24 @@ h6 {
 #module-header .logo {
     width: 450px;
     margin-left: -2px;
+}
+#module-header .languages a {
+    color: #BFBDBD;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+#module-header .languages .selected {
+    color: #000;
+    pointer-events: none;
+}
+#module-header .languages a:hover {
+    color: #A40000;
 }
 #module-header ul {
     list-style-type: none;
@@ -417,6 +411,11 @@ h6 {
 #module-music {
     background-color: #F2F2F2;
 }
+#module-music h1 {
+    padding: 40px;
+    text-align: center;
+    font-weight: 100;
+}
 #module-music:after {
     content: "";
     display: table;
@@ -463,24 +462,6 @@ h6 {
     line-height: 1.5;
     font-size: 18px;
 }
-/*
-#module-music .text {
-    padding: 100px 100px 0 100px;
-    background: #000;
-}*/
-/*#module-music .text h3 {
-    font-weight: 300;
-    line-height: 1.5;
-}
-*/
-/*
-#module-music .text p {
-    margin-top: 30px;
-    font-weight: 400;
-    word-spacing: 2px;
-    line-height: 1.5;
-    font-size: 18px;
-}
 #module-music .img1.animated {
     opacity: 0;
     -webkit-animation-duration: 1200ms;
@@ -508,7 +489,105 @@ h6 {
 #module-music .img2.animated.fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-}*/
+}
+/* =============================================================================
+  MODULE CONTACTS
+============================================================================= */
+
+#module-contacts {
+    color: #fff;
+    background: #000;
+}
+#module-contacts:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#module-contacts img {
+    width: 100%;
+    float: left;
+}
+#module-contacts [class*='col-'] {
+    float: left;
+}
+#module-contacts .col-1-2 {
+    width: 50%;
+}
+#module-contacts .text a {
+    text-decoration: none;
+    color: #A40000;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+#module-contacts .text a:hover {
+    color: #fff;
+}
+#module-contacts .text {
+    padding: 50px 100px 0 100px;
+    background: #000;
+}
+#module-contacts .text h3 {
+    font-weight: 300;
+    line-height: 1.5;
+}
+#module-contacts .email:before {
+    font-family: "FontAwesome";
+    content: "\f0e0";
+    padding-right: 20px;
+}
+#module-contacts .phone:before {
+    font-family: "FontAwesome";
+    content: "\f095";
+    padding-right: 20px;
+}
+#module-contacts .white {
+    background-color: #fff;
+}
+#module-contacts .text p {
+    font-weight: 400;
+    word-spacing: 2px;
+    font-size: 18px;
+}
+#module-contacts .img1.animated {
+    opacity: 0;
+    -webkit-animation-duration: 1200ms;
+    animation-duration: 1200ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+#module-contacts .img1.animated.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+/* =============================================================================
+  MODULE FOOTER
+============================================================================= */
+
+#module-footer {
+    padding: 50px;
+    height: 100px;
+    background: #fff;
+    text-align: center;
+}
+#module-footer p {
+    font-weight: 100;
+    font-size: 18px;
+    height: 100px;
+    background: #fff;
+}
+#module-footer a {
+    text-decoration: none;
+    color: #000;
+}
+#module-footer a:hover {
+    text-decoration: none;
+    color: #A40000;
+}
 /* =============================================================================
   MEDIA QUERIES
 ============================================================================= */
@@ -526,16 +605,15 @@ h6 {
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    html {
-        /*font-size: 20px;*/
+    #module-header {
+        padding: 20px 0 20px 40px;
     }
 }
 /* 
  ========= LARGE DEVICES (desktops) ============
 */
-
+/*
 @media screen and (min-width: 993px) {
-    html {
-        /*font-size: 24px;*/
-    }
+   
 }
+*/
