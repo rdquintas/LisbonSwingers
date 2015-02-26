@@ -16,24 +16,32 @@ $(document).ready(function() {
      *=============================================================================*/
 
     // >>>>>>>>>>>>>>>> Images for the preloader
-    var imgPreloaderCounter = $(".load-this").length;
-    console.log("imgPreloaderCounter: " + imgPreloaderCounter);
+    // var imgPreloaderCounter = $(".load-this").length;
+    // console.log("imgPreloaderCounter: " + imgPreloaderCounter);
 
-    $(".load-this").load(function() {
-        imgPreloaderCounter--;
-        // console.log("img src: " + this.src);
-        // If all images are loaded, init Packery
-        if (imgPreloaderCounter === 0) {
-            console.log("Hide preloader");
-            $("#module-preloader").addClass('hide-me');
-            $("#module-header").addClass('show');
-            $("#module-hero").addClass('fadeInUp');
-        }
-    });
+    // $(".load-this").load(function() {
+    //     imgPreloaderCounter--;
+    //     // console.log("img src: " + this.src);
+    //     // If all images are loaded, init Packery
+    //     if (imgPreloaderCounter === 0) {
+    //         console.log("Hide preloader");
+    //         $("#module-preloader").addClass('hide-me');
+    //         $("#module-header").addClass('show');
+    //         $("#module-hero").addClass('fadeInUp');
+    //     }
+    // });
 
-    $(".load-this").each(function() {
-        $(this).load()
-    });
+
+
+    $(window).load(function() {
+        $("#module-preloader").addClass('hide-me');
+        $("#module-header").addClass('show');
+        $("#module-hero").addClass('fadeInUp');
+    })
+    
+    // $(".load-this").each(function() {
+    //     $(this).load()
+    // });
 
     // >>>>>>>>>>>>>>>> Images for the guys
     var imgGuysCounter = $("#module-guys img").length;
