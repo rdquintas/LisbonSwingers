@@ -5,42 +5,6 @@ $(document).ready(function() {
     var _iv_big = 3; // random percent for BIG squares
 
     /*=============================================================================
-     * MODULE PHOTOS 2
-     *=============================================================================*/
-    var wp_img1 = new Waypoint({
-        element: $("#module-photos-1 .img1"),
-        offset: '85%',
-        handler: function(direction) {
-            $("#module-photos-1 .img1").addClass('fadeInUp')
-        }
-    });
-
-    var wp_img2 = new Waypoint({
-        element: $("#module-photos-1 .img2"),
-        offset: '95%',
-        handler: function(direction) {
-            $("#module-photos-1 .img2").addClass('fadeInUp')
-        }
-    });
-
-    var wp_img3 = new Waypoint({
-        element: $("#module-photos-2 .img1"),
-        offset: '90%',
-        handler: function(direction) {
-            $("#module-photos-2 .img1").addClass('fadeInUp');
-            $("#module-photos-2 .img2").addClass('fadeInUp');
-        }
-    });
-
-    var wp_contacts = new Waypoint({
-        element: $("#module-contacts .img1"),
-        offset: '90%',
-        handler: function(direction) {
-            $("#module-contacts .img1").addClass('fadeInUp');
-        }
-    });
-
-    /*=============================================================================
      * SCROLL-TOS
      *=============================================================================*/
     $("#module-header .guys").on("click", function(e) {
@@ -115,14 +79,11 @@ $(document).ready(function() {
     /*=============================================================================
      * CHECK IMAGES ARE LOADED
      *=============================================================================*/
-    var cnt = $("img").length;
-    console.log("cnt: " + cnt);
-    $("img").one("load", function() {
-        console.log("img src: " + this.src);
+    var cnt = $("#module-guys img").length;
+    $("#module-guys img").load(function() {
         cnt--;
         // If all images are loaded, init Packery
         if (cnt === 0) {
-            console.log("Packery initialized");
             randomizeDIVs();
             doReflow();
         }
@@ -130,6 +91,42 @@ $(document).ready(function() {
         if (this.complete) $(this).load();
     });
 
+
+    /*=============================================================================
+     * WAYPOINTS
+     *=============================================================================*/
+    var wp_img1 = new Waypoint({
+        element: $("#module-photos-1 .img1"),
+        offset: '85%',
+        handler: function(direction) {
+            $("#module-photos-1 .img1").addClass('fadeInUp')
+        }
+    });
+
+    var wp_img2 = new Waypoint({
+        element: $("#module-photos-1 .img2"),
+        offset: '95%',
+        handler: function(direction) {
+            $("#module-photos-1 .img2").addClass('fadeInUp')
+        }
+    });
+
+    var wp_img3 = new Waypoint({
+        element: $("#module-photos-2 .img1"),
+        offset: '90%',
+        handler: function(direction) {
+            $("#module-photos-2 .img1").addClass('fadeInUp');
+            $("#module-photos-2 .img2").addClass('fadeInUp');
+        }
+    });
+
+    var wp_contacts = new Waypoint({
+        element: $("#module-contacts .img1"),
+        offset: '90%',
+        handler: function(direction) {
+            $("#module-contacts .img1").addClass('fadeInUp');
+        }
+    });
 
     $(window).resize(function() {
         // location.reload(true);
