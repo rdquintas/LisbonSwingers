@@ -37,60 +37,6 @@ $(document).ready(function() {
     // Load The Guys Section
     theGuysSection();
 
-    /*=============================================================================
-     * TOOLTIPS - HANDLE CLICK EVENTS
-     *=============================================================================*/
-    $(".item").on("click", function(e) {
-        console.log("tamanho: " + $(this).children(".tooltip").css("width"));
-
-        if ($(this).children(".tooltip").is(":visible")) {
-            $(this).children(".tooltip").hide(200);
-            return;
-        }
-
-        $(".tooltip").each(function() {
-            $(this).hide(200);
-        });
-
-        $(this).css("overflow", "visible");
-
-        $(this).children(".tooltip").show(200, function() {
-            var tt_left = $(this).offset().left;
-            var tt_top = $(this).offset().top;
-            var tt_width = $(this).width();
-
-            console.log("tt_left: " + tt_left);
-            console.log("tt_width: " + tt_width);
-
-            if (tt_left + tt_width > window.innerWidth) {
-                $(this).offset({
-                    top: tt_top,
-                    left: tt_left - tt_width
-                });
-            }
-        });
-    });
-
-
-    $(".tooltip").on("mouseleave", function(e) {
-        $(this).hide(200);
-    });
-
-    /*=============================================================================
-     * CHECK IMAGES ARE LOADED
-     *=============================================================================*/
-    var cnt = $("#module-guys img").length;
-    $("#module-guys img").load(function() {
-        cnt--;
-        // If all images are loaded, init Packery
-        if (cnt === 0) {
-            randomizeDIVs();
-            doReflow();
-        }
-    }).each(function() {
-        if (this.complete) $(this).load();
-    });
-
 
     /*=============================================================================
      * WAYPOINTS
@@ -130,6 +76,66 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         // location.reload(true);
+    });
+
+
+
+    /*=============================================================================
+     * TOOLTIPS - HANDLE CLICK EVENTS
+     *=============================================================================*/
+    $(".item").on("click", function(e) {
+
+        if ($(this).children(".tooltip").is(":visible")) {
+            $(this).children(".tooltip").hide(200);
+            return;
+        }
+
+        $(".tooltip").each(function() {
+            $(this).hide(200);
+        });
+
+        $(this).css("overflow", "visible");
+
+        $(this).children(".tooltip").show(200, function() {
+            var tt_left = $(this).offset().left;
+            var tt_top = $(this).offset().top;
+            var tt_width = $(this).width();
+
+            if (tt_left + tt_width > window.innerWidth) {
+                $(this).offset({
+                    top: tt_top,
+                    left: tt_left - tt_width
+                });
+            }
+        });
+    });
+
+
+    $(".tooltip").on("mouseleave", function(e) {
+        $(this).hide(200);
+    });
+
+    /*=============================================================================
+     * CHECK IMAGES ARE LOADED
+     *=============================================================================*/
+    var cnt = $("#module-guys img").length;
+    // console.log("cnt: " + cnt);
+
+    $("#module-guys img").load(function() {
+        cnt--;
+        // console.log("img src: " + this.src);
+        // If all images are loaded, init Packery
+        if (cnt === 0) {
+            // console.log("All images loaded. Start the party");
+            randomizeDIVs();
+            doReflow();
+        }
+    });
+
+    $("#module-guys img").each(function() {
+        if (this.complete) {
+            $(this).load()
+        }
     });
 
 
@@ -175,13 +181,13 @@ $(document).ready(function() {
             var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
             cards.eq(target).before(cards.eq(target2));
         });
+
     }
 
     function doReflow() {
         var $container = $('.container').packery({
             itemSelector: '.item'
         });
-
         // $container.imagesLoaded(function() {
         //     $container.packery();
         // });
