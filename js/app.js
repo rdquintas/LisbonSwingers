@@ -24,6 +24,8 @@ $("img").load(function() {
         randomizeDIVs();
         doReflow();
         $("#module-preloader").addClass('hide-me');
+        $("#module-header").addClass('show');
+        $("#module-hero").addClass('fadeInUp');
     }
 });
 
@@ -60,9 +62,6 @@ $(document).ready(function() {
             easing: 'linear',
         });
     });
-
-    $("#module-header").addClass('show');
-    $("#module-hero").addClass('fadeInUp');
 
     /*=============================================================================
      * WAYPOINTS
