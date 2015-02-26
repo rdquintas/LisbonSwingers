@@ -6,36 +6,57 @@ var _iv_normal = 7; // random percent for NORMAL squares
 var _iv_small = 90; // random percent for SMALL squares
 var _iv_big = 3; // random percent for BIG squares
 
-// Load The Guys Section
-buildGuysSection();
-
-/*=============================================================================
- * CHECK IMAGES ARE LOADED
- *=============================================================================*/
-var cnt = $("img").length;
-// console.log("cnt: " + cnt);
-
-$("img").load(function() {
-    cnt--;
-    // console.log("img src: " + this.src);
-    // If all images are loaded, init Packery
-    if (cnt === 0) {
-        // console.log("All images loaded. Start the party");
-        randomizeDIVs();
-        doReflow();
-        $("#module-preloader").addClass('hide-me');
-        $("#module-header").addClass('show');
-        $("#module-hero").addClass('fadeInUp');
-    }
-});
-
-$("img").each(function() {
-    if (this.complete) {
-        $(this).load()
-    }
-});
-
 $(document).ready(function() {
+
+    // Load The Guys Section
+    buildGuysSection();
+
+    /*=============================================================================
+     * CHECK IMAGES ARE LOADED
+     *=============================================================================*/
+
+    // >>>>>>>>>>>>>>>> Images for the preloader
+    var imgPreloaderCounter = $(".load-this").length;
+    console.log("imgPreloaderCounter: " + imgPreloaderCounter);
+
+    $(".load-this").load(function() {
+        imgPreloaderCounter--;
+        // console.log("img src: " + this.src);
+        // If all images are loaded, init Packery
+        if (imgPreloaderCounter === 0) {
+            console.log("Hide preloader");
+            $("#module-preloader").addClass('hide-me');
+            $("#module-header").addClass('show');
+            $("#module-hero").addClass('fadeInUp');
+        }
+    });
+
+    $(".load-this").each(function() {
+        $(this).load()
+    });
+
+    // >>>>>>>>>>>>>>>> Images for the guys
+    var imgGuysCounter = $("#module-guys img").length;
+    console.log("imgGuysCounter: " + imgGuysCounter);
+
+    $("#module-guys img").load(function() {
+        imgGuysCounter--;
+        // console.log("img src: " + this.src);
+        // If all images are loaded, init Packery
+        if (imgGuysCounter === 0) {
+            // console.log("All images loaded. Start the party");
+            randomizeDIVs();
+            doReflow();
+        }
+    });
+
+    $("#module-guys img").each(function() {
+        if (this.complete) {
+            $(this).load()
+        }
+    });
+
+
     /*=============================================================================
      * SCROLL-TOS
      *=============================================================================*/
