@@ -4,6 +4,45 @@ $(document).ready(function() {
     var _iv_small = 90; // random percent for SMALL squares
     var _iv_big = 3; // random percent for BIG squares
 
+    /*=============================================================================
+     * MODULE PHOTOS 2
+     *=============================================================================*/
+    var wp_img1 = new Waypoint({
+        element: $("#module-photos-1 .img1"),
+        offset: '85%',
+        handler: function(direction) {
+            $("#module-photos-1 .img1").addClass('fadeInUp')
+        }
+    });
+
+    var wp_img2 = new Waypoint({
+        element: $("#module-photos-1 .img2"),
+        offset: '95%',
+        handler: function(direction) {
+            $("#module-photos-1 .img2").addClass('fadeInUp')
+        }
+    });
+
+    var wp_img3 = new Waypoint({
+        element: $("#module-photos-2 .img1"),
+        offset: '90%',
+        handler: function(direction) {
+            $("#module-photos-2 .img1").addClass('fadeInUp');
+            $("#module-photos-2 .img2").addClass('fadeInUp');
+        }
+    });
+
+    var wp_contacts = new Waypoint({
+        element: $("#module-contacts .img1"),
+        offset: '90%',
+        handler: function(direction) {
+            $("#module-contacts .img1").addClass('fadeInUp');
+        }
+    });
+
+    /*=============================================================================
+     * SCROLL-TOS
+     *=============================================================================*/
     $("#module-header .guys").on("click", function(e) {
         e.preventDefault();
         $('#module-guys').ScrollTo({
@@ -34,7 +73,9 @@ $(document).ready(function() {
     // Load The Guys Section
     theGuysSection();
 
-    //Handle click events for item
+    /*=============================================================================
+     * TOOLTIPS - HANDLE CLICK EVENTS
+     *=============================================================================*/
     $(".item").on("click", function(e) {
         console.log("tamanho: " + $(this).children(".tooltip").css("width"));
 
@@ -71,7 +112,9 @@ $(document).ready(function() {
         $(this).hide(200);
     });
 
-    //Check images loaded
+    /*=============================================================================
+     * CHECK IMAGES ARE LOADED
+     *=============================================================================*/
     var cnt = $("img").length;
     $("img").one("load", function() {
         cnt--;
@@ -89,6 +132,10 @@ $(document).ready(function() {
         // location.reload(true);
     });
 
+
+    /*=============================================================================
+     * CREATE HANDLEBAR OBJECT
+     *=============================================================================*/
     function createGuy(name, desc, www, img) {
         var obj = {};
 
@@ -112,12 +159,14 @@ $(document).ready(function() {
         return obj;
     }
 
+    /*=============================================================================
+     * RANDOMIZE DIV LOCATION AND SIZE
+     *=============================================================================*/
     function randomizeDIVs() {
         var cards = $(".item");
         $.each(cards, function(key, value) {
             $(this).addClass(randomizeDivSize());
 
-            // var wrapperDiv = $(this).css("height").split("px")[0];
             var imgDivHeight = $(this).children("img").css("height").split("px")[0];
 
             $(this).css("height", imgDivHeight);
@@ -159,6 +208,9 @@ $(document).ready(function() {
     }
 
 
+    /*=============================================================================
+     * BUILD DATA
+     *=============================================================================*/
     function theGuysSection() {
         var myData = [];
 
@@ -457,23 +509,5 @@ $(document).ready(function() {
         };
 
         $('#module-guys .container').append(_template(data));
-    }
-});
-
-$(document).scroll(function() {
-    var y = $(this).scrollTop();
-    if (y > 550) {
-        $("#module-photos-1 .img1").addClass('fadeInUp');
-    }
-    if (y > 850) {
-        $("#module-photos-1 .img2").addClass('fadeInUp');
-    }
-    if (y > 1550) {
-        $("#module-photos-2 .img1").addClass('fadeInUp');
-        $("#module-photos-2 .img2").addClass('fadeInUp');
-    }
-
-    if (y > 4900) {
-        $("#module-contacts .img1").addClass('fadeInUp');
     }
 });
