@@ -116,10 +116,13 @@ $(document).ready(function() {
      * CHECK IMAGES ARE LOADED
      *=============================================================================*/
     var cnt = $("img").length;
+    console.log("cnt: " + cnt);
     $("img").one("load", function() {
+        console.log("img src: " + this.src);
         cnt--;
         // If all images are loaded, init Packery
         if (cnt === 0) {
+            console.log("Packery initialized");
             randomizeDIVs();
             doReflow();
         }
