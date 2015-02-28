@@ -2,8 +2,10 @@
   GLOBALS
 ============================================================================= */
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-*, *:after, *:before {
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+*,
+*:after,
+*:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -16,32 +18,32 @@ body {
 html {
     max-width: 1366px;
     margin: 0 auto;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.5;
     font-family: "Lato", sans-serif;
 }
-h1, h2, h3, h4, h5, h6, p, ul, ol {
-    margin-top: 0;
-    font-weight: 400;
-    margin-bottom: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    line-height: 1.5em;
 }
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0.5rem;
-    line-height: 1.1;
+p {
+    font-weight: 400;
+    word-spacing: 2px;
+    line-height: 1.5;
+    font-size: 18px;
 }
 .quote {
     margin: 100px 200px 100px 200px;
     text-align: center;
     color: #838383;
 }
-.quote h1 {
-    font-weight: 300;
-    line-height: 1.3;
+.hide-me {
+    display: none;
 }
-/* =============================================================================
-  GLOBAL ANIMATIONS
-============================================================================= */
+/*Animations ======== */
 
 @-webkit-keyframes fadeInUp {
     0% {
@@ -99,9 +101,19 @@ h1, h2, h3, h4, h5, h6 {
 #module-header.show {
     opacity: 1;
 }
+#module-header .toggle {
+    margin-top: -10px;
+    position: absolute;
+    right: 20px;
+    display: none;
+    z-index: 20;
+}
 #module-header .logo {
     width: 450px;
     margin-left: -2px;
+}
+#module-header .languages {
+    margin-top: 20px;
 }
 #module-header .languages a {
     color: #BFBDBD;
@@ -133,6 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #module-header li a {
     color: #BFBDBD;
+    font-size: 25px;
     text-decoration: none;
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -152,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
 }
 #module-hero img {
-    width: 100%
+    max-width: 100%
 }
 #module-hero.animated {
     -webkit-animation-duration: 1800ms;
@@ -209,17 +222,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 100px 100px 0 100px;
     background: #000;
 }
-#module-photos-1 .text h3 {
-    font-weight: 300;
-    line-height: 1.5;
-}
-#module-photos-1 .text p {
-    margin-top: 30px;
-    font-weight: 400;
-    word-spacing: 2px;
-    line-height: 1.5;
-    font-size: 18px;
-}
 #module-photos-1 .img1.animated {
     opacity: 0;
     -webkit-animation-duration: 1200ms;
@@ -252,10 +254,6 @@ h1, h2, h3, h4, h5, h6 {
   MODULE PHOTOS 2
 ============================================================================= */
 
-#module-photos-2 {
-    /*color: #fff;*/
-    /*background: #000;*/
-}
 #module-photos-2:after {
     content: "";
     display: table;
@@ -270,33 +268,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #module-photos-2 .col-1-2 {
     width: 50%;
-}
-#module-photos-2 .text a {
-    text-decoration: none;
-    color: #A40000;
-    -o-transition: .2s;
-    -ms-transition: .2s;
-    -moz-transition: .2s;
-    -webkit-transition: .2s;
-    transition: .2s;
-}
-#module-photos-2 .text a:hover {
-    color: #fff;
-}
-#module-photos-2 .text {
-    padding: 100px 100px 0 100px;
-    background: #000;
-}
-#module-photos-2 .text h3 {
-    font-weight: 300;
-    line-height: 1.5;
-}
-#module-photos-2 .text p {
-    margin-top: 30px;
-    font-weight: 400;
-    word-spacing: 2px;
-    line-height: 1.5;
-    font-size: 18px;
 }
 #module-photos-2 .img1.animated {
     opacity: 0;
@@ -332,7 +303,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #module-guys .container {
     background-color: #000;
-    overflow: hidden;
 }
 #module-guys h1 {
     margin: 50px 200px 50px 200px;
@@ -376,8 +346,6 @@ h1, h2, h3, h4, h5, h6 {
     top: -10px;
     padding: 10px;
     width: 280px;
-    font-size: 15px;
-    color: #000;
     background-color: #939393;
     border: 1px solid #ACACAC;
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
@@ -388,10 +356,13 @@ h1, h2, h3, h4, h5, h6 {
 #module-guys .tooltip .title {
     font-weight: 700;
     float: left;
+    color: #000;
+    font-size: 15px;
     margin: 0;
 }
 #module-guys .tooltip .desc {
     clear: both;
+    font-size: 15px;
 }
 #module-guys .tooltip i {
     margin-top: -7px;
@@ -418,7 +389,6 @@ h1, h2, h3, h4, h5, h6 {
 #module-music h1 {
     padding: 40px;
     text-align: center;
-    font-weight: 100;
 }
 #module-music:after {
     content: "";
@@ -458,16 +428,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #module-music .title {
     text-align: left;
-    font-weight: 300;
-    line-height: 1.5;
-    margin: 0;
 }
 #module-music .desc {
     text-align: left;
-    font-weight: 400;
-    word-spacing: 2px;
-    line-height: 1.5;
-    font-size: 18px;
 }
 #module-music .img1.animated {
     opacity: 0;
@@ -536,10 +499,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 50px 100px 0 100px;
     background: #000;
 }
-#module-contacts .text h3 {
-    font-weight: 300;
-    line-height: 1.5;
-}
 #module-contacts .email:before {
     font-family: "FontAwesome";
     content: "\f0e0";
@@ -552,11 +511,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #module-contacts .white {
     background-color: #fff;
-}
-#module-contacts .text p {
-    font-weight: 400;
-    word-spacing: 2px;
-    font-size: 18px;
 }
 #module-contacts .img1.animated {
     opacity: 0;
@@ -581,11 +535,8 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     text-align: center;
 }
-#module-footer p {
-    font-weight: 100;
-    font-size: 18px;
-    height: 100px;
-    background: #fff;
+#module-footer h3 {
+    padding-bottom: 80px;
 }
 #module-footer a {
     text-decoration: none;
@@ -604,16 +555,185 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
     html {
-        /*font-size: 14px;*/
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1em;
+    }
+    h3 {
+        font-size: 0.8em;
+        font-weight: 400;
+    }
+    .quote {
+        padding: 15px;
+        margin: 0;
+    }
+    #module-header {
+        padding: 3% 5% 0 5%;
+    }
+    #module-header .logo {
+        max-width: 80%;
+        float: left;
+    }
+    #module-header .toggle {
+        display: block;
+    }
+    #module-header .toggle a {
+        text-decoration: none;
+        margin-top: 4%;
+        color: #BFBDBD;
+    }
+    #module-header .toggle a:hover {
+        color: #000;
+    }
+    #module-header nav.mobile {
+        opacity: 1;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: block;
+    }
+    #module-header nav {
+        display: none;
+    }
+    #module-header .languages {
+        clear: both;
+        margin-top: -15px;
+        margin-bottom: 15px;
+    }
+    #module-header .languages {
+        font-size: 15px;
+    }
+    #module-header .languages a {
+        font-size: 15px;
+        padding-right: 7px;
+        padding-left: 3px;
+    }
+    #module-header nav ul {
+        margin-top: 75px;
+    }
+    #module-header li {
+        text-align: right;
+        display: block;
+    }
+    #module-hero {
+        height: 300px;
+    }
+    #module-hero img {
+        /*width: inherit;*/
+        /*min-width: 0%;*/
+        /*height: 300px;*/
+    }
+    #module-photos-1 .col-1-2 {
+        width: 100%;
+    }
+    #module-photos-1 .col-1-2 .text {
+        padding: 30px;
+        margin: 0;
+    }
+    #module-photos-2 .col-1-2 {
+        width: 100%;
+    }
+    #module-guys h1 {
+        margin: 20px;
+    }
+    #module-guys .container .size-small {
+        width: 33.3333%;
+    }
+    #module-guys .container .size-normal {
+        width: 66.6666%;
+    }
+    #module-guys .container .size-big {
+        width: 99.9999%;
+    }
+    #module-guys .tooltip {
+        width: 220px;
+    }
+    #module-guys .tooltip .title {
+        font-size: 13px;
+    }
+    #module-guys .tooltip .desc {
+        font-size: 13px;
+    }
+    #module-music .col-1-3 {
+        width: 100%;
+        margin: 0 !important;
+    }
+    #module-contacts .col-1-2 {
+        width: 100%;
+    }
+    #module-contacts .text {
+        padding: 30px;
+        margin: 0;
+    }
+    #module-footer {
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+        height: 50px;
+    }
+    #module-footer h3 {
+        padding: 0;
+        margin: 0;
     }
 }
 /* 
  ========= MEDIUM DEVICES (tablets) ============
 */
 
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+    #module-photos-1 .col-1-2 {
+        width: 100%;
+    }
+    #module-photos-1 .col-1-2 .text {
+        padding: 50px;
+        margin: 0;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    h1 {
+        font-size: 1.7em;
+    }
+    #module-music .wrap .col-1-3:nth-child(3n+1) {
+        margin-left: 0%;
+    }
+    #module-music .col-1-3 {
+        width: 40%;
+        margin-right: 6.66%;
+    }
+    #module-music .wrap .col-1-3:nth-child(odd) {
+        margin-left: 6.66%;
+    }
+    .quote {
+        margin: 50px;
+    }
     #module-header {
         padding: 20px 0 20px 40px;
+    }
+    #module-guys .container .size-small {
+        width: 16.6666%;
+    }
+    #module-guys .container .size-normal {
+        width: 33.3332%;
+    }
+    #module-guys .container .size-big {
+        width: 49.9998%;
+    }
+    #module-contacts .col-1-2 {
+        width: 100%;
+    }
+    #module-contacts .text {
+        padding: 20px 100px 20px 100px;
     }
 }
 /* 

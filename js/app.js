@@ -15,37 +15,16 @@ $(document).ready(function() {
      * CHECK IMAGES ARE LOADED
      *=============================================================================*/
 
-    // >>>>>>>>>>>>>>>> Images for the preloader
-    // var imgPreloaderCounter = $(".load-this").length;
-    // console.log("imgPreloaderCounter: " + imgPreloaderCounter);
-
-    // $(".load-this").load(function() {
-    //     imgPreloaderCounter--;
-    //     // console.log("img src: " + this.src);
-    //     // If all images are loaded, init Packery
-    //     if (imgPreloaderCounter === 0) {
-    //         console.log("Hide preloader");
-    //         $("#module-preloader").addClass('hide-me');
-    //         $("#module-header").addClass('show');
-    //         $("#module-hero").addClass('fadeInUp');
-    //     }
-    // });
-
-
-
+    // Hide the pre-loader
     $(window).load(function() {
         $("#module-preloader").addClass('hide-me');
         $("#module-header").addClass('show');
         $("#module-hero").addClass('fadeInUp');
-    })
-    
-    // $(".load-this").each(function() {
-    //     $(this).load()
-    // });
+    });
 
-    // >>>>>>>>>>>>>>>> Images for the guys
+    // Images for the guys
     var imgGuysCounter = $("#module-guys img").length;
-    console.log("imgGuysCounter: " + imgGuysCounter);
+    // console.log("imgGuysCounter: " + imgGuysCounter);
 
     $("#module-guys img").load(function() {
         imgGuysCounter--;
@@ -60,16 +39,22 @@ $(document).ready(function() {
 
     $("#module-guys img").each(function() {
         if (this.complete) {
-            $(this).load()
+            $(this).load();
         }
     });
 
-
     /*=============================================================================
-     * SCROLL-TOS
+     * EVENT HANDLING
      *=============================================================================*/
+
     $("#module-header .guys").on("click", function(e) {
         e.preventDefault();
+        if ($("#module-header nav").hasClass("mobile")) {
+            $("#module-header .toggle .open").toggleClass('hide-me');
+            $("#module-header .toggle .close").toggleClass('hide-me');
+            $("#module-header nav").toggleClass("mobile");
+        }
+
         $('#module-guys').ScrollTo({
             duration: 500,
             easing: 'linear'
@@ -78,6 +63,12 @@ $(document).ready(function() {
 
     $("#module-header .music").on("click", function(e) {
         e.preventDefault();
+        if ($("#module-header nav").hasClass("mobile")) {
+            $("#module-header .toggle .open").toggleClass('hide-me');
+            $("#module-header .toggle .close").toggleClass('hide-me');
+            $("#module-header nav").toggleClass("mobile");
+        }
+
         $('#module-music').ScrollTo({
             duration: 500,
             easing: 'linear',
@@ -86,10 +77,30 @@ $(document).ready(function() {
 
     $("#module-header .contacts").on("click", function(e) {
         e.preventDefault();
+        if ($("#module-header nav").hasClass("mobile")) {
+            $("#module-header .toggle .open").toggleClass('hide-me');
+            $("#module-header .toggle .close").toggleClass('hide-me');
+            $("#module-header nav").toggleClass("mobile");
+        }
+
         $('#module-contacts').ScrollTo({
             duration: 500,
             easing: 'linear',
         });
+    });
+
+    $("#module-header .toggle .open").on("click", function(e) {
+        e.preventDefault();
+        $("#module-header .toggle .open").toggleClass('hide-me');
+        $("#module-header .toggle .close").toggleClass('hide-me');
+        $("#module-header nav").toggleClass("mobile");
+    });
+
+    $("#module-header .toggle .close").on("click", function(e) {
+        e.preventDefault();
+        $("#module-header .toggle .open").toggleClass('hide-me');
+        $("#module-header .toggle .close").toggleClass('hide-me');
+        $("#module-header nav").toggleClass("mobile");
     });
 
     /*=============================================================================
@@ -129,7 +140,13 @@ $(document).ready(function() {
     });
 
     $(window).resize(function() {
-        // location.reload(true);
+        var width = $(window).width();
+        if (width < 768) {
+            $("#module-header .toggle .open").removeClass('hide-me');
+            $("#module-header .toggle .close").addClass('hide-me');
+            $("#module-header nav").removeClass("mobile");
+        }
+
     });
 
     /*=============================================================================
