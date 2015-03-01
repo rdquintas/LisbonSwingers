@@ -6,6 +6,17 @@ var _iv_normal = 7; // random percent for NORMAL squares
 var _iv_small = 90; // random percent for SMALL squares
 var _iv_big = 3; // random percent for BIG squares
 
+// Hide the pre-loader
+$(window).load(function() {
+    alert("load1");
+    $("#module-preloader").addClass('hide-me');
+    alert("load2");
+    $("#module-header").addClass('show');
+    alert("load3");
+    $("#module-hero").addClass('fadeInUp');
+    alert("load4");
+});
+
 $(document).ready(function() {
 
     // Load The Guys Section
@@ -15,17 +26,6 @@ $(document).ready(function() {
     /*=============================================================================
      * CHECK IMAGES ARE LOADED
      *=============================================================================*/
-
-    // Hide the pre-loader
-    $(window).load(function() {
-        alert("load1");
-        $("#module-preloader").addClass('hide-me');
-        alert("load2");
-        $("#module-header").addClass('show');
-        alert("load3");
-        $("#module-hero").addClass('fadeInUp');
-        alert("load4");
-    });
 
     // Images for the guys
     var imgGuysCounter = $("#module-guys img").length;
