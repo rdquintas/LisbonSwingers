@@ -10,6 +10,7 @@ $(document).ready(function() {
 
     // Load The Guys Section
     buildGuysSection();
+    alert("buildGuysSection");
 
     /*=============================================================================
      * CHECK IMAGES ARE LOADED
@@ -17,9 +18,13 @@ $(document).ready(function() {
 
     // Hide the pre-loader
     $(window).load(function() {
+        alert("load1");
         $("#module-preloader").addClass('hide-me');
+        alert("load2");
         $("#module-header").addClass('show');
+        alert("load3");
         $("#module-hero").addClass('fadeInUp');
+        alert("load4");
     });
 
     // Images for the guys
