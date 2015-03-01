@@ -7,15 +7,18 @@ var _iv_small = 90; // random percent for SMALL squares
 var _iv_big = 3; // random percent for BIG squares
 
 // Hide the pre-loader
-$(window).load(function() {
-    alert("load1");
-    $("#module-preloader").addClass('hide-me');
-    alert("load2");
-    $("#module-header").addClass('show');
-    alert("load3");
-    $("#module-hero").addClass('fadeInUp');
-    alert("load4");
-});
+window.onload = function() {
+// $("#module-hero img").load(function() {
+alert("load1");
+$("#module-preloader").addClass('hide-me');
+alert("load2");
+$("#module-header").addClass('show');
+alert("load3");
+$("#module-hero").addClass('fadeInUp');
+alert("load4");
+// });
+}();
+
 
 $(document).ready(function() {
 
