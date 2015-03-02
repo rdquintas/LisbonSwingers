@@ -6,21 +6,14 @@ var _iv_normal = 7; // random percent for NORMAL squares
 var _iv_small = 90; // random percent for SMALL squares
 var _iv_big = 3; // random percent for BIG squares
 
-// Hide the pre-loader
-// window.onload = function() {
-//     $("#module-preloader").addClass('hide-me');
-//     $("#module-header").addClass('show');
-//     $("#module-hero").addClass('fadeInUp');
-// }();
-
 
 $(document).ready(function() {
-    
+
     // Hide the pre-loader
-    $("#module-preloader").addClass('hide-me');
-    $("#module-header").addClass('show');
+    $("#module-preloader").fadeOut(500);
+    $("#module-header").fadeIn(2500);
     $("#module-hero").addClass('fadeInUp');
-    
+
     // Load The Guys Section
     buildGuysSection();
 
@@ -99,14 +92,24 @@ $(document).ready(function() {
         e.preventDefault();
         $("#module-header .toggle .open").toggleClass('hide-me');
         $("#module-header .toggle .close").toggleClass('hide-me');
-        $("#module-header nav").toggleClass("mobile");
+        $("#module-header nav").fadeIn(200);
+        $("#module-header nav .guys").delay(800).fadeIn(800);
+
+        // $('#module-header nav .guys')
+        //     .stop(true, true)
+        //     .animate({
+        //         height: "toggle",
+        //         opacity: "toggle"
+        //     }, 1000);
+
+
     });
 
     $("#module-header .toggle .close").on("click", function(e) {
         e.preventDefault();
         $("#module-header .toggle .open").toggleClass('hide-me');
         $("#module-header .toggle .close").toggleClass('hide-me');
-        $("#module-header nav").toggleClass("mobile");
+        $("#module-header nav").fadeOut(200);
     });
 
     /*=============================================================================
@@ -116,7 +119,7 @@ $(document).ready(function() {
         element: $("#module-photos-1 .img1"),
         offset: '85%',
         handler: function(direction) {
-            $("#module-photos-1 .img1").addClass('fadeInUp')
+            $("#module-photos-1 .img1").addClass('fadeInUp');
         }
     });
 
@@ -124,7 +127,7 @@ $(document).ready(function() {
         element: $("#module-photos-1 .img2"),
         offset: '95%',
         handler: function(direction) {
-            $("#module-photos-1 .img2").addClass('fadeInUp')
+            $("#module-photos-1 .img2").addClass('fadeInUp');
         }
     });
 
