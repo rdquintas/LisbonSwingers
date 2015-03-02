@@ -48,42 +48,42 @@ $(document).ready(function() {
 
     $("#module-header .guys").on("click", function(e) {
         e.preventDefault();
-        if ($("#module-header nav").hasClass("mobile")) {
+        if ($("#module-header .toggle").is(":visible")) {
             $("#module-header .toggle .open").toggleClass('hide-me');
             $("#module-header .toggle .close").toggleClass('hide-me');
-            $("#module-header nav").toggleClass("mobile");
+            $("#module-header nav").toggle();
         }
 
         $('#module-guys').ScrollTo({
-            duration: 500,
+            duration: 1000,
             easing: 'linear'
         });
     });
 
     $("#module-header .music").on("click", function(e) {
         e.preventDefault();
-        if ($("#module-header nav").hasClass("mobile")) {
+        if ($("#module-header .toggle").is(":visible")) {
             $("#module-header .toggle .open").toggleClass('hide-me');
             $("#module-header .toggle .close").toggleClass('hide-me');
-            $("#module-header nav").toggleClass("mobile");
+            $("#module-header nav").toggle();
         }
 
         $('#module-music').ScrollTo({
-            duration: 500,
+            duration: 1000,
             easing: 'linear',
         });
     });
 
     $("#module-header .contacts").on("click", function(e) {
         e.preventDefault();
-        if ($("#module-header nav").hasClass("mobile")) {
+        if ($("#module-header .toggle").is(":visible")) {
             $("#module-header .toggle .open").toggleClass('hide-me');
             $("#module-header .toggle .close").toggleClass('hide-me');
-            $("#module-header nav").toggleClass("mobile");
+            $("#module-header nav").toggle();
         }
 
         $('#module-contacts').ScrollTo({
-            duration: 500,
+            duration: 1000,
             easing: 'linear',
         });
     });
@@ -93,16 +93,9 @@ $(document).ready(function() {
         $("#module-header .toggle .open").toggleClass('hide-me');
         $("#module-header .toggle .close").toggleClass('hide-me');
         $("#module-header nav").fadeIn(200);
-        $("#module-header nav .guys").delay(800).fadeIn(800);
-
-        // $('#module-header nav .guys')
-        //     .stop(true, true)
-        //     .animate({
-        //         height: "toggle",
-        //         opacity: "toggle"
-        //     }, 1000);
-
-
+        $("#module-header nav a.guys").addClass("fadeInUp");
+        $("#module-header nav a.music").addClass("fadeInUp");
+        $("#module-header nav a.contacts").addClass("fadeInUp");
     });
 
     $("#module-header .toggle .close").on("click", function(e) {

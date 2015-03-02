@@ -595,8 +595,48 @@ p {
         bottom: 0;
         position: fixed;
     }
-    #module-header nav a {
-        display: none;
+    #module-header nav .guys.animated {
+        opacity: 0;
+        -webkit-animation-duration: 600ms;
+        animation-duration: 600ms;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+        animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    }
+    #module-header nav .guys.animated.fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+    }
+    #module-header nav .music.animated {
+        opacity: 0;
+        -webkit-animation-delay: 200ms;
+        animation-delay: 200ms;
+        -webkit-animation-duration: 600ms;
+        animation-duration: 600ms;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+        animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    }
+    #module-header nav .music.animated.fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+    }
+    #module-header nav .contacts.animated {
+        opacity: 0;
+        -webkit-animation-delay: 400ms;
+        animation-delay: 400ms;
+        -webkit-animation-duration: 600ms;
+        animation-duration: 600ms;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+        animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    }
+    #module-header nav .contacts.animated.fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
     }
     #module-header .languages {
         clear: both;
@@ -616,6 +656,7 @@ p {
     }
     #module-header li {
         text-align: right;
+        margin-top: 20px;
         display: block;
     }
     #module-photos-1 .col-1-2 {
