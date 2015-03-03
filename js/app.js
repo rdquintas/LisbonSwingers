@@ -97,7 +97,7 @@ $(document).ready(function() {
 
         $('#module-music').ScrollTo({
             duration: 1000,
-            easing: 'linear',
+            easing: 'linear'
         });
     });
 
@@ -111,7 +111,7 @@ $(document).ready(function() {
 
         $('#module-contacts').ScrollTo({
             duration: 1000,
-            easing: 'linear',
+            easing: 'linear'
         });
     });
 
