@@ -6,28 +6,47 @@ var _iv_normal = 7; // random percent for NORMAL squares
 var _iv_small = 90; // random percent for SMALL squares
 var _iv_big = 3; // random percent for BIG squares
 
-window.onload = function () {
-	    $("#module-preloader").hide();
-        $("#module-header").fadeIn(2500);
-        $("#module-hero").addClass('fadeInUp');
-        prepareWayPoints();
-}();
-    // Hide the pre-loader and start doing stuff
-    // $(window).load(function() {
-  //     $("#module-preloader").hide();
-  //     $("#module-header").fadeIn(2500);
-  //     $("#module-hero").addClass('fadeInUp');
-  //     prepareWayPoints();
-  // });
+// window.onload = function() {
+//     $("#module-preloader").hide();
+//     $("#module-header").fadeIn(2500);
+//     $("#module-hero").addClass('fadeInUp');
+// }();
+
+
 
 $(document).ready(function() {
 
-    buildGuysSection();
-    /*=============================================================================
-     * CHECK IMAGES ARE LOADED
-     *=============================================================================*/
+    // Hide the pre-loader and start doing stuff
+    $(window).load(function() {
+        $("#module-preloader").hide();
+        $("#module-header").fadeIn(2500);
+        $("#module-hero").addClass('fadeInUp');
+    });
 
-    // Images for the guys
+    //Check on scroll to display images
+    $(document).on("scroll", function() {
+        if (isScrolledIntoView("#module-photos-1 .img1")) {
+            $("#module-photos-1 .img1").addClass('fadeInUp');
+        };
+
+        if (isScrolledIntoView("#module-photos-1 .img2")) {
+            $("#module-photos-1 .img2").addClass('fadeInUp');
+        };
+
+        if (isScrolledIntoView("#module-photos-2 .img1")) {
+            $("#module-photos-2 .img1").addClass('fadeInUp');
+            $("#module-photos-2 .img2").addClass('fadeInUp');
+        };
+
+        if (isScrolledIntoView("#module-contacts .img1")) {
+            $("#module-contacts .img1").addClass('fadeInUp');
+        };
+
+    });
+
+    buildGuysSection();
+
+    // CHECK IMAGES ARE LOADED Images for the guys
     var imgGuysCounter = $("#module-guys img").length;
     // console.log("imgGuysCounter: " + imgGuysCounter);
 
@@ -161,40 +180,50 @@ $(document).ready(function() {
 /*=============================================================================
  * WAYPOINTS
  *=============================================================================*/
-function prepareWayPoints() {
-    var wp_img1 = new Waypoint({
-        element: $("#module-photos-1 .img1"),
-        offset: '85%',
-        handler: function(direction) {
-            $("#module-photos-1 .img1").addClass('fadeInUp');
-        }
-    });
 
-    var wp_img2 = new Waypoint({
-        element: $("#module-photos-1 .img2"),
-        offset: '95%',
-        handler: function(direction) {
-            $("#module-photos-1 .img2").addClass('fadeInUp');
-        }
-    });
-
-    var wp_img3 = new Waypoint({
-        element: $("#module-photos-2 .img1"),
-        offset: '90%',
-        handler: function(direction) {
-            $("#module-photos-2 .img1").addClass('fadeInUp');
-            $("#module-photos-2 .img2").addClass('fadeInUp');
-        }
-    });
-
-    var wp_contacts = new Waypoint({
-        element: $("#module-contacts .img1"),
-        offset: '90%',
-        handler: function(direction) {
-            $("#module-contacts .img1").addClass('fadeInUp');
-        }
-    });
+function isScrolledIntoView(elem) {
+    var el = $(elem)[0];
+    var elemTop = el.getBoundingClientRect().top;
+    var elemBottom = el.getBoundingClientRect().bottom;
+    var isVisible = (elemTop <= window.innerHeight);
+    return isVisible;
 }
+
+
+// function BKPprepareWayPoints() {
+//     var wp_img1 = new Waypoint({
+//         element: $("#module-photos-1 .img1"),
+//         offset: '85%',
+//         handler: function(direction) {
+//             $("#module-photos-1 .img1").addClass('fadeInUp');
+//         }
+//     });
+
+//     var wp_img2 = new Waypoint({
+//         element: $("#module-photos-1 .img2"),
+//         offset: '95%',
+//         handler: function(direction) {
+//             $("#module-photos-1 .img2").addClass('fadeInUp');
+//         }
+//     });
+
+//     var wp_img3 = new Waypoint({
+//         element: $("#module-photos-2 .img1"),
+//         offset: '90%',
+//         handler: function(direction) {
+//             $("#module-photos-2 .img1").addClass('fadeInUp');
+//             $("#module-photos-2 .img2").addClass('fadeInUp');
+//         }
+//     });
+
+//     var wp_contacts = new Waypoint({
+//         element: $("#module-contacts .img1"),
+//         offset: '90%',
+//         handler: function(direction) {
+//             $("#module-contacts .img1").addClass('fadeInUp');
+//         }
+//     });
+// }
 
 /*=============================================================================
  * RANDOMIZE DIV LOCATION AND SIZE
