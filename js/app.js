@@ -8,14 +8,14 @@ var _iv_big = 3; // random percent for BIG squares
 
 
 $(document).ready(function() {
-
-    // Hide the pre-loader
-    $("#module-preloader").fadeOut(500);
-    $("#module-header").fadeIn(2500);
-    $("#module-hero").addClass('fadeInUp');
-
-    // Load The Guys Section
-    buildGuysSection();
+    
+    // Hide the pre-loader and start doing stuff
+    $(window).load(function() {
+        $("#module-preloader").hide();
+        $("#module-header").fadeIn(2500);
+        $("#module-hero").addClass('fadeInUp');
+        buildGuysSection();
+    });
 
     /*=============================================================================
      * CHECK IMAGES ARE LOADED
@@ -185,7 +185,7 @@ $(document).ready(function() {
     $(".tooltip").on("mouseleave", function(e) {
         $(this).hide(200);
     });
-});
+}); // end .ready()
 
 
 /*=============================================================================
