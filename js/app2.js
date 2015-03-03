@@ -24,7 +24,7 @@ var _iv_big = 3; // random percent for BIG squares
 $(document).ready(function() {
 	alert("zrq0");
     // Hide the pre-loader and start doing stuff
-    window.onload = function() {
+    document.onload = function() {
         alert("zrq1");
         $("#module-preloader").hide();
         alert("zrq2");
