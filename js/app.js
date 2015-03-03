@@ -7,15 +7,29 @@ var _iv_small = 90; // random percent for SMALL squares
 var _iv_big = 3; // random percent for BIG squares
 
 // Hide the pre-loader and start doing stuff
-$(window).load(function() {
-    $("#module-preloader").hide();
-    $("#module-header").fadeIn(2500);
-    $("#module-hero").addClass('fadeInUp');
-    buildGuysSection();
-});
+// window.onload = function() {
+//     $("#module-preloader").hide();
+//     $("#module-header").fadeIn(2500);
+//     $("#module-hero").addClass('fadeInUp');
+//     buildGuysSection();
+// };
+
+// $(window).load(function() {
+//     $("#module-preloader").hide();
+//     $("#module-header").fadeIn(2500);
+//     $("#module-hero").addClass('fadeInUp');
+//     buildGuysSection();
+// });
 
 $(document).ready(function() {
-
+	
+    // Hide the pre-loader and start doing stuff
+    window.onload = function() {
+        $("#module-preloader").hide();
+        $("#module-header").fadeIn(2500);
+        $("#module-hero").addClass('fadeInUp');
+        buildGuysSection();
+    };
     /*=============================================================================
      * CHECK IMAGES ARE LOADED
      *=============================================================================*/
