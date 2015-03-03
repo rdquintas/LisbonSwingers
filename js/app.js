@@ -6,30 +6,17 @@ var _iv_normal = 7; // random percent for NORMAL squares
 var _iv_small = 90; // random percent for SMALL squares
 var _iv_big = 3; // random percent for BIG squares
 
-// Hide the pre-loader and start doing stuff
-// window.onload = function() {
-//     $("#module-preloader").hide();
-//     $("#module-header").fadeIn(2500);
-//     $("#module-hero").addClass('fadeInUp');
-//     buildGuysSection();
-// };
-
-// $(window).load(function() {
-//     $("#module-preloader").hide();
-//     $("#module-header").fadeIn(2500);
-//     $("#module-hero").addClass('fadeInUp');
-//     buildGuysSection();
-// });
-
 $(document).ready(function() {
-	
+
     // Hide the pre-loader and start doing stuff
-    window.onload = function() {
+    $(window).load(function() {
         $("#module-preloader").hide();
         $("#module-header").fadeIn(2500);
         $("#module-hero").addClass('fadeInUp');
-        buildGuysSection();
-    }();
+        prepareWayPoints();
+    });
+
+    buildGuysSection();
     /*=============================================================================
      * CHECK IMAGES ARE LOADED
      *=============================================================================*/
@@ -118,42 +105,6 @@ $(document).ready(function() {
         $("#module-header nav").fadeOut(200);
     });
 
-    /*=============================================================================
-     * WAYPOINTS
-     *=============================================================================*/
-    var wp_img1 = new Waypoint({
-        element: $("#module-photos-1 .img1"),
-        offset: '85%',
-        handler: function(direction) {
-            $("#module-photos-1 .img1").addClass('fadeInUp');
-        }
-    });
-
-    var wp_img2 = new Waypoint({
-        element: $("#module-photos-1 .img2"),
-        offset: '95%',
-        handler: function(direction) {
-            $("#module-photos-1 .img2").addClass('fadeInUp');
-        }
-    });
-
-    var wp_img3 = new Waypoint({
-        element: $("#module-photos-2 .img1"),
-        offset: '90%',
-        handler: function(direction) {
-            $("#module-photos-2 .img1").addClass('fadeInUp');
-            $("#module-photos-2 .img2").addClass('fadeInUp');
-        }
-    });
-
-    var wp_contacts = new Waypoint({
-        element: $("#module-contacts .img1"),
-        offset: '90%',
-        handler: function(direction) {
-            $("#module-contacts .img1").addClass('fadeInUp');
-        }
-    });
-
     $(window).resize(function() {
         var width = $(window).width();
         if (width < 768) {
@@ -200,6 +151,44 @@ $(document).ready(function() {
     });
 }); // end .ready()
 
+
+/*=============================================================================
+ * WAYPOINTS
+ *=============================================================================*/
+function prepareWayPoints() {
+    var wp_img1 = new Waypoint({
+        element: $("#module-photos-1 .img1"),
+        offset: '85%',
+        handler: function(direction) {
+            $("#module-photos-1 .img1").addClass('fadeInUp');
+        }
+    });
+
+    var wp_img2 = new Waypoint({
+        element: $("#module-photos-1 .img2"),
+        offset: '95%',
+        handler: function(direction) {
+            $("#module-photos-1 .img2").addClass('fadeInUp');
+        }
+    });
+
+    var wp_img3 = new Waypoint({
+        element: $("#module-photos-2 .img1"),
+        offset: '90%',
+        handler: function(direction) {
+            $("#module-photos-2 .img1").addClass('fadeInUp');
+            $("#module-photos-2 .img2").addClass('fadeInUp');
+        }
+    });
+
+    var wp_contacts = new Waypoint({
+        element: $("#module-contacts .img1"),
+        offset: '90%',
+        handler: function(direction) {
+            $("#module-contacts .img1").addClass('fadeInUp');
+        }
+    });
+}
 
 /*=============================================================================
  * RANDOMIZE DIV LOCATION AND SIZE
@@ -577,4 +566,6 @@ function buildGuysSection() {
     };
 
     $('#module-guys .container').append(_template(data));
+
+    // prepareWayPoints();
 }
