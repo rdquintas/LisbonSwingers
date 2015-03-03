@@ -6,15 +6,21 @@ var _iv_normal = 7; // random percent for NORMAL squares
 var _iv_small = 90; // random percent for SMALL squares
 var _iv_big = 3; // random percent for BIG squares
 
-$(document).ready(function() {
-
-    // Hide the pre-loader and start doing stuff
-    $(window).load(function() {
-        $("#module-preloader").hide();
+window.onload = function () {
+	    $("#module-preloader").hide();
         $("#module-header").fadeIn(2500);
         $("#module-hero").addClass('fadeInUp');
         prepareWayPoints();
-    });
+}();
+    // Hide the pre-loader and start doing stuff
+    // $(window).load(function() {
+  //     $("#module-preloader").hide();
+  //     $("#module-header").fadeIn(2500);
+  //     $("#module-hero").addClass('fadeInUp');
+  //     prepareWayPoints();
+  // });
+
+$(document).ready(function() {
 
     buildGuysSection();
     /*=============================================================================
