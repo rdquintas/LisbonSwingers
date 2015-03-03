@@ -29,7 +29,7 @@ $(document).ready(function() {
         $("#module-header").fadeIn(2500);
         $("#module-hero").addClass('fadeInUp');
         buildGuysSection();
-    };
+    }();
     /*=============================================================================
      * CHECK IMAGES ARE LOADED
      *=============================================================================*/
