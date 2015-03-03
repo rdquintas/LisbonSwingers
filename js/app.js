@@ -26,20 +26,23 @@ $(document).ready(function() {
     $(document).on("scroll", function() {
         if (isScrolledIntoView("#module-photos-1 .img1")) {
             $("#module-photos-1 .img1").addClass('fadeInUp');
-        };
+        }
 
         if (isScrolledIntoView("#module-photos-1 .img2")) {
             $("#module-photos-1 .img2").addClass('fadeInUp');
-        };
+        }
 
         if (isScrolledIntoView("#module-photos-2 .img1")) {
             $("#module-photos-2 .img1").addClass('fadeInUp');
+        }
+    
+        if (isScrolledIntoView("#module-photos-2 .img2")) {
             $("#module-photos-2 .img2").addClass('fadeInUp');
-        };
+        }
 
         if (isScrolledIntoView("#module-contacts .img1")) {
             $("#module-contacts .img1").addClass('fadeInUp');
-        };
+        }
 
     });
 
