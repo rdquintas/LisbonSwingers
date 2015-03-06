@@ -151,11 +151,13 @@ p {
 ============================================================================= */
 
 #module-hero {
-    position: relative;
-    opacity: 0;
-}
-#module-hero img {
-    max-width: 100%
+    background: url(../img/hero-large-pb.jpg) no-repeat center center;
+    height: 450px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #module-hero.animated {
     -webkit-animation-duration: 1800ms;
@@ -659,6 +661,11 @@ p {
         margin-top: 20px;
         display: block;
     }
+    #module-hero {
+        width: 1366px;
+        margin-left: -550px;
+        height: 300px;
+    }
     #module-photos-1 .col-1-2 {
         width: 100%;
     }
@@ -728,6 +735,9 @@ p {
 @media screen and (min-width: 768px) and (max-width: 992px) {
     h1 {
         font-size: 1.7em;
+    }
+    #module-hero {
+        height: 300px;
     }
     #module-music .wrap .col-1-3:nth-child(3n+1) {
         margin-left: 0%;
