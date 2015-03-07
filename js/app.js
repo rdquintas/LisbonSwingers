@@ -12,31 +12,32 @@ window.onload = function() {
     $("#module-hero").addClass('fadeInUp');
 }();
 
-// // Check guys images are loaded
-// var imgGuysCounter = $("#module-guys img").length;
-// // console.log("imgGuysCounter: " + imgGuysCounter);
-// $("#module-guys img").on("load", function() {
-//     imgGuysCounter--;
-//     // console.log("img src: " + this.src);
-//     // If all images are loaded, init Packery
-//     if (imgGuysCounter === 0) {
-//         // console.log("All images loaded. Start the party");
-//         randomizeDIVs();
-//         doReflow();
-//     }
-// });
-
-// $("#module-guys img").each(function() {
-//     if (this.complete) {
-//         $(this).load();
-//     }
-// });
-
-
-$(window).load(function() {
-    randomizeDIVs();
-    doReflow();
+// Check guys images are loaded
+var imgGuysCounter = $("#module-guys img").length;
+// console.log("imgGuysCounter: " + imgGuysCounter);
+$("#module-guys img").on("load", function() {
+    imgGuysCounter--;
+    // console.log("img src: " + this.src);
+    // If all images are loaded, init Packery
+    if (imgGuysCounter === 0) {
+        // console.log("All images loaded. Start the party");
+        alert("ok 1628");
+        randomizeDIVs();
+        doReflow();
+    }
 });
+
+$("#module-guys img").each(function() {
+    if (this.complete) {
+        $(this).load();
+    }
+});
+
+
+// $(window).load(function() {
+//     randomizeDIVs();
+//     doReflow();
+// });
 
 
 $(document).ready(function() {
