@@ -21,7 +21,6 @@ $("#module-guys img").on("load", function() {
     // If all images are loaded, init Packery
     if (imgGuysCounter === 0) {
         // console.log("All images loaded. Start the party");
-        alert("ok 1628");
         randomizeDIVs();
         doReflow();
     }
@@ -32,12 +31,6 @@ $("#module-guys img").each(function() {
         $(this).load();
     }
 });
-
-
-// $(window).load(function() {
-//     randomizeDIVs();
-//     doReflow();
-// });
 
 
 $(document).ready(function() {
