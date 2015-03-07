@@ -32,7 +32,8 @@ window.onload = function() {
 //     }
 // });
 
-$(window).on("load", function() {
+
+$(window).load(function() {
     randomizeDIVs();
     doReflow();
 });
