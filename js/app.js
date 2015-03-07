@@ -12,11 +12,30 @@ window.onload = function() {
     $("#module-hero").addClass('fadeInUp');
 }();
 
-// $(window).load(function() {
-//     $("#module-preloader").hide();
-//     $("#module-header").fadeIn(2500);
-//     $("#module-hero").addClass('fadeInUp');
+// // Check guys images are loaded
+// var imgGuysCounter = $("#module-guys img").length;
+// // console.log("imgGuysCounter: " + imgGuysCounter);
+// $("#module-guys img").on("load", function() {
+//     imgGuysCounter--;
+//     // console.log("img src: " + this.src);
+//     // If all images are loaded, init Packery
+//     if (imgGuysCounter === 0) {
+//         // console.log("All images loaded. Start the party");
+//         randomizeDIVs();
+//         doReflow();
+//     }
 // });
+
+// $("#module-guys img").each(function() {
+//     if (this.complete) {
+//         $(this).load();
+//     }
+// });
+
+$(window).on("load", function() {
+    randomizeDIVs();
+    doReflow();
+});
 
 
 $(document).ready(function() {
@@ -34,7 +53,7 @@ $(document).ready(function() {
         if (isScrolledIntoView("#module-photos-2 .img1")) {
             $("#module-photos-2 .img1").addClass('fadeInUp');
         }
-    
+
         if (isScrolledIntoView("#module-photos-2 .img2")) {
             $("#module-photos-2 .img2").addClass('fadeInUp');
         }
@@ -43,26 +62,6 @@ $(document).ready(function() {
             $("#module-contacts .img1").addClass('fadeInUp');
         }
 
-    });
-
-    // CHECK IMAGES ARE LOADED Images for the guys
-    var imgGuysCounter = $("#module-guys img").length;
-    // console.log("imgGuysCounter: " + imgGuysCounter);
-    $("#module-guys img").load(function() {
-        imgGuysCounter--;
-        // console.log("img src: " + this.src);
-        // If all images are loaded, init Packery
-        if (imgGuysCounter === 0) {
-            // console.log("All images loaded. Start the party");
-            randomizeDIVs();
-            doReflow();
-        }
-    });
-
-    $("#module-guys img").each(function() {
-        if (this.complete) {
-            $(this).load();
-        }
     });
 
     /*=============================================================================
@@ -230,4 +229,3 @@ function randomizeDivSize() {
 
     return boxSize;
 }
-
