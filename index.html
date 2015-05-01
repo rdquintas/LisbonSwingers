@@ -28,7 +28,18 @@
 </head>
 
 <body>
-
+    <!--[if lte IE 9]>
+    <div class="browserupdate">
+        You are using an obsolete browser which can harm your experience and cause security troubles.
+        <br> Please <a href="http://browsehappy.com/" target="_blank">update your browser!</a>
+    </div>
+  <![endif]-->
+    <noscript>
+        <div class="browserupdate">
+            Oh, no! You don't have JavaScript enabled on your browser!
+            <br> This website only works with JavaScript. Sorry.
+        </div>
+    </noscript>
     <!--
 =============================================================================
     MODULE PRE-LOADER
@@ -45,7 +56,6 @@
 ============================================================================= 
  -->
     <section id="module-header">
-
         <img src="img/logo.png" class="logo">
         <div class="toggle">
             <a class="open" href="#"><i class="fa fa-bars"></i></a>
@@ -54,21 +64,20 @@
         <nav>
             <ul>
                 <li>
-                    <a class="guys animated" href="#">The Guys</a>
+                    <a class="guys animated" href="#">A Banda</a>
                 </li>
                 <li>
-                    <a class="music animated" href="#">Music</a>
+                    <a class="music animated" href="#">Musica</a>
                 </li>
                 <li>
-                    <a class="contacts animated" href="#">Contacts</a>
+                    <a class="contacts animated" href="#">Contactos</a>
                 </li>
             </ul>
         </nav>
-        <div class="languages"><a class="pt" href="index.html">pt</a>/
-            <a class="en selected" href="index_en.html">en</a>
+        <div class="languages"><a class="pt selected" href="index.html">pt</a>/
+            <a class="en" href="index_en.html">en</a>
         </div>
     </section>
-
     <!--
 =============================================================================
     MODULE HERO
@@ -77,11 +86,9 @@
     <section id="module-hero" class="animated">
         <div class="band-image"></div>
     </section>
-
     <section class="quote">
-        <h1>The Lisbon Swingers are a Big Band formed by a group of friends who like to play Jazz standards, mainly from the American repertoire from the Swing era.</h1>
+        <h1>Os Lisbon Swingers s&atilde;o uma Big Band constitu&iacute;da por um grupo de amigos que gostam de interpretar grandes temas de Jazz, em especial dos cl&aacute;ssicos americanos da era do Swing.</h1>
     </section>
-
     <!--
 =============================================================================
     MODULE PHOTOS 1
@@ -90,9 +97,10 @@
     <section id="module-photos-1">
         <div class="col-1-2">
             <div class="text">
-                <h2>The repertoire is diverse, mostly composed of tunes originally performed by important jazz orchestras, such as those of Count Basie, Duke Ellington, Glenn Miller, Artie Shaw or Benny Goodman.</h2>
-                <p>The band, conducted by the acclaimed trombone player, arranger and band leader
-                    <a href="http://www.clausnymark.com/" target="_blank">Claus Nymark</a> , is composed of a clarinet, five saxophones, eight brasses (four trumpets and four trombones), rhythm section (bass, drums, guitar and piano) and a voice.</p>
+                <h2>O repert&oacute;rio da banda &eacute; ecl&eacute;tico, com predomin&acirc;ncia de standards de orquestras como as de Count Basie, Duke Ellington, Glenn Miller, Artie Shaw ou de Benny Goodman.</h2>
+                <p>
+                    A banda, dirigida pelo consagrado trombonista, maestro e arranjador <a href="http://www.clausnymark.com/" target="_blank">Claus Nymark</a>, &eacute; composta por um clarinete, cinco saxofones, oito metais (quatro trompetes e quatro trombones), sec&ccedil;&atilde;o r&iacute;tmica (bateria, contrabaixo, guitarra e piano) e voz.
+                </p>
             </div>
         </div>
         <div class="col-1-2 white">
@@ -100,11 +108,9 @@
             <img src="img/img02.jpg" class="img2 animated">
         </div>
     </section>
-
     <section class="quote">
-        <h1>Throughout the years, the Lisbon Swingers have performed all over Portugal in many different venues: big concert halls, smaller auditoriums, as well as at private and public parties.</h1>
+        <h1>Ao longo do tempo, os Lisbon Swingers t&ecirc;m actuado um pouco por todo o lado: grandes audit&oacute;rios, salas de espect&aacute;culo, casas da cultura, e tamb&eacute;m em festas p&uacute;blicas e privadas.</h1>
     </section>
-
     <!--
 =============================================================================
     MODULE PHOTOS 2
@@ -118,28 +124,28 @@
             <img src="img/img04.jpg" class="img2 animated">
         </div>
     </section>
-
     <!--
 =============================================================================
     MODULE GUYS
 ============================================================================= 
  -->
     <section id="module-guys">
-        <h1>These are some of the musicians who have played with the Lisbon Swingers.</h1>
+        <h1>Estes s&atilde;o alguns dos m&uacute;sicos que j&aacute; tocaram com os Lisbon Swingers.</h1>
         <div class="container">
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Miguel Gon&ccedil;alves (trumpet)</p>
+                    <p class="title">Miguel Gon&ccedil;alves (trompete)</p>
                 </div>
                 <img src="img/guys/miguel_goncalves.jpg">
             </div>
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Pedro Madeira (drums)</p>
-
-                    <p class="desc">Music studies: Jazz School Luiz Villas-Boas / Hot Club de Portugal and Escola Superior de M&uacute;sica de Lisboa (Jazz Bachelor) 'When I was 18 years old, I had my first experience with drums. Since then, I knew that music would fulfill my personal and professional life till the end of my days.'</p>
+                    <p class="title">Pedro Madeira (bateria)</p>
+                    <p class="desc">
+                        Estudo musicais: Escola de Jazz Villas-Boas / Hot Clud de Portual e Escola Superior de M&uacute;sica de Lisboa (bacharel em Jazz). &quot;Quando tinha 18 anos, tive a minha primeira experi&ecirc;ncia com a bateria, desde a&iacute;, soube que a m&uacute;sica iria preencher a minha vida pessoal e profissional para sempre.&quot;
+                    </p>
                 </div>
                 <img src="img/guys/pedro_madeira.jpg">
             </div>
@@ -148,98 +154,100 @@
                     <i class="fa fa-times"></i>
                     <p class="title">Rui Caetano (piano)</p>
                     <a class="www" href="http://ruicaetanotrio.com/" target="_blank">ruicaetanotrio.com</a>
-                    <p class="desc">Rui Caetano started his musical studies at the age of ten, by having private classical piano lessons, in Portugal. After graduating from the Jazz and Contemporary Music Program at the New School, in New York, in the year 2000, he returned to Portugal where has been teaching and playing in several projects and events of the Portuguese Jazz scene, including the Lisbon Swingers Orchestra.</p>
+                    <p class="desc">
+                        Rui Caetano come&ccedil;ou os seus estudos musicais com a idade de 10 anos, tendo come&ccedil;ado por ter aulas particulares de piano em Portugal. Depois de ter obtido a sua gradua&ccedil;&atilde;o em Jazz and Contemporary Music Program na New School em Nova Iorque em 2000, regressou a Portugal onde tem tido uma actividade intensa como professor de m&uacute;sica e participado em varios projectos e eventos da cena Jazz portuguesa, incluindo com a orquestra de Jazz Lisbon Swingers.
+                    </p>
                 </div>
                 <img src="img/guys/rui_caetano.jpg">
             </div>
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Jo&atilde;o Viana (trumpet)</p>
-
-                    <p class="desc">Jo&atilde;o Viana is a doctor in medicine and a self-taught amateur trumpet player. The &ldquo;Dixie Gang&rdquo;, the oldest traditional jazz band in Portugal that he co-founded 23 years ago, is his main musical activity. For him, the pleasure of playing with the Lisbon Swingers comes not only from its repertoire, but also from the challenging technical and musical reading skills it demands.</p>
+                    <p class="title">Jo&atilde;o Viana (trompete)</p>
+                    <p class="desc">Jo&atilde;o Viana &eacute; m&eacute;dico e um trompetista de Jazz amador, auto-didacta. Os &quot;Dixie Gang&quot;, a mais antiga banda de Jazz tradicional em Portugal, que ajudou a fundar h&aacute; mais de 23 anos, &eacute; a sua principal actividade musical. O prazer de tocar com os Lisbon Swingers vem, n&atilde;o s&oacute; do report&oacute;rio, mas tamb&eacute;m do desafio musical e t&eacute;cnico que &eacute; exigido.
+                    </p>
                 </div>
                 <img src="img/guys/joao_viana.jpg">
             </div>
-
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Luis Martins (sax baritone)</p>
-
-                    <p class="desc">Started to play saxophone in a local wind Band. His first musical school was the Escola Profissional de M&uacute;sica de Almada, where he took lessons with M&aacute;rio Marques, Hugo Gaito, Armindo Luis and finally Pedro Silva. Luis has a degree in Music performance: Saxophone, from University of &Eacute;vora. He teaches classical saxophone at some music schools, and is a member of the Portuguese Air Force Band.</p>
+                    <p class="title">Luis Martins (sax baritono)</p>
+                    <p class="desc">
+                        Começou a tocar saxofone num grupo de sopros local e iniciou os seus estudos musicais na Escola Profissional de M&uacute;sica de Almada, onde teve aulas com M&aacute;rio Marques, Hugo Gaito, Armindo Luis e Pedro Silva. &Eacute; graduado em Performance Musical: Saxofone pela University de &Eacute;vora. Ensina saxofone cl&aacute;ssico em algumas escolas musicais e &eacute; membro da Banda da For&ccedil;a A&eacute;rea Portuguesa.
+                    </p>
                 </div>
                 <img src="img/guys/luis_martins.jpg">
             </div>
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Lino Lisboa (trumpet)</p>
-
-                    <p class="desc">Born in 1981 Lino is a Trumpet player from Lisbon. He started learning music when he was 10 years old at the Lisbon Music School, EMCN with teacher Jos&eacute; Augusto Carneiro, also did some graduate studies at &Eacute;vora University. Plays professionally in the Portuguese Air Force Band.</p>
+                    <p class="title">Lino Lisboa (trompete)</p>
+                    <p class="desc">
+                        Lino nasceu em 1981 e &eacute; um trompetista de Lisboa. Come&ccedil;ou a aprender musica quando tinha 10 anos de idade na Escola de Musica de Lisboa EMCN com o professor Jos&eacute; Augusto Carneiro. Tamb&eacute;m fez alguns estudos na Universidade de &Eacute;vora. Toca como profissional na Banda da For&ccedil;a A&eacute;rea Portuguesa.
+                    </p>
                 </div>
                 <img src="img/guys/lino_lisboa.jpg">
             </div>
-
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Claus Nymark (director)</p>
+                    <p class="title">Claus Nymark (maestro)</p>
                     <a class="www" href="http://www.clausnymark.com" target="_blank">clausnymark.com</a>
-                    <p class="desc">Claus Nymark was born on the outskirts of Copenhagen, Denmark in 1966 and began to play trombone at age 15. He holds a MA degree in music and another in musical education. Since moving to Portugal in 1986 he has maintained a busy schedule playing and teaching in several Jazz Schools around the country. At present he is teaching at The University of &Eacute;vora and conducts several big bands, among them Lisbon Swingers which he has been conducting for over 15 years.</p>
+                    <p class="desc">
+                        Claus Nymark nasceu nos arredores de Copenhaga (Dinamarca) em 1966 e come&ccedil;ou a tocar trombone com a idade de 15 anos. Possui um mestrado em musica e outro em educa&ccedil;&atilde;o musical. Desde que se mudou para Portugal em 1986 que tem mantido uma agenda profissional muito ocupada como professor em v&aacute;rias escolas de Jazz pelo pa&iacute;s. Neste momento ensina na Universidade de &Eacute;vora e &eacute; respons&aacute;vel pela reg&ecirc;ncia de v&aacute;rias big bands, entre elas, os Lisbon Swingers, da qual tem sido maestro nos &uacute;ltimos 15 anos.
+                    </p>
                 </div>
                 <img src="img/guys/claus.jpg">
             </div>
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Ivo Rodrigues (trumpet)</p>
+                    <p class="title">Ivo Rodrigues (trompete)</p>
                 </div>
                 <img src="img/guys/ivo_rodrigues.jpg">
             </div>
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Manuel Barbosa (tenor sax)</p>
-
-                    <p class="desc">A retired professor of Economics</p>
+                    <p class="title">Manuel Barbosa (sax tenor)</p>
+                    <p class="desc">Professor de Economia (reformado).</p>
                 </div>
                 <img src="img/guys/manuel_barbosa.jpg">
             </div>
-
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Jos&eacute; Mata (guitar)</p>
-
-                    <p class="desc">Plays the guitar in the band. He is a University Professor in the Area of Business.</p>
+                    <p class="title">Jos&eacute; Mata (guitarra)</p>
+                    <p class="desc">Professor Universit&aacute;rio na &agrave;rea de gest&atilde;o.
+                    </p>
                 </div>
                 <img src="img/guys/jose_mata.jpg">
             </div>
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Antonio Barbosa (alto sax and piano)</p>
-
-                    <p class="desc">He is a University Professor.</p>
+                    <p class="title">Ant&oacute;nio Barbosa (sax alto e piano)</p>
+                    <p class="desc">&Eacute; professor universit&aacute;rio.</p>
                 </div>
                 <img src="img/guys/antonio_barbosa.jpg">
             </div>
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Miguel Viana (tenor and alto sax)</p>
-
-                    <p class="desc">He is a self-taught Jazz Musician. He works as an HR Director.</p>
+                    <p class="title">Miguel Viana (sax alto e tenor)</p>
+                    <p class="desc">&Eacute; um m&uacute;sico de Jazz auto-didacta. Trabalha como director de recursos humanos.
+                    </p>
                 </div>
                 <img src="img/guys/miguel_viana.jpg">
             </div>
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Luciano Amaral (singer)</p>
-
-                    <p class="desc">He has studied for a few years, in the mid 1990s, at the Jazz School of HCP (Hot Club de Portugal) where he was a member of the students big band as a singer. His profession has nothing to do with music; he teaches in a University.</p>
+                    <p class="title">Luciano Amaral (voz)</p>
+                    <p class="desc">
+                        Estudou durante alguns anos na Escola de Jazz do Hot Club de Portugal (HCP) em meados dos anos 90, tendo sido cantor da Big Band dos alunos do HCP. A sua profiss&atilde;o nada tem que ver com a m&uacute;sica. &Eacute; professor universit&aacute;rio.
+                    </p>
                 </div>
                 <img src="img/guys/luciano_amaral.jpg">
             </div>
@@ -253,16 +261,18 @@
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Ricardo Quintas (clarinet)</p>
+                    <p class="title">Ricardo Quintas (clarinete)</p>
                     <a class="www" href="http://www.ricardoquintas.com" target="_blank">ricardoquintas.com</a>
-                    <p class="desc">Plays the Clarinet. He learned music at the Jazz School of HCP (Hot Club de Portugal). Works as a frelance IT consultant around the world.</p>
+                    <p class="desc">
+                        Toca clarinete. Aprendeu música na escola de Jazz do Hot Club de Portugal. Trabalha como programador de software freelancer, um pouco por todo o mundo.
+                    </p>
                 </div>
                 <img src="img/guys/ricardo_quintas.jpg">
             </div>
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Jo&atilde;o Capinha (alto sax)</p>
+                    <p class="title">Jo&atilde;o Capinha (sax alto)</p>
                 </div>
                 <img src="img/guys/joao_capinha.jpg">
             </div>
@@ -276,9 +286,10 @@
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Santi Cianci (double bass)</p>
-
-                    <p class="desc">Santi joined the band in 2012 . He is Italian (1954) and a self-taught electric bass player since he was a teenager. He began to study acoustic double bass in 2011 with the Portuguese musician Rui Silva. He is the CEO of an insurance company.</p>
+                    <p class="title">Santi Cianci (contrabaixo)</p>
+                    <p class="desc">
+                        Santi juntou-se &agrave; banda em 2012. &Eacute; italiano (1954) e um baixista el&eacute;ctrico auto-didacta desde a sua adolesc&ecirc;ncia. Come&ccedil;ou a estudar contrabaixo em 2011 com o m&uacute;sico portugu&ecirc;s Rui Silva. &Eacute; CEO numa companhia de seguros.
+                    </p>
                 </div>
                 <img src="img/guys/santi_cianci.jpg">
             </div>
@@ -286,40 +297,42 @@
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
                     <p class="title">Gon&ccedil;alo Marques (trombone)</p>
-
-                    <p class="desc">He is an euphonium player/teacher. He graduated from the Escola Superior de M&uacute;sica de Lisboa, but has always had some curiosity about trombone and jazz music. Gon&ccedil;alo plays the euphonium in the Portuguese Air Force Band and the trombone in the Lisbon Swingers Big Band. At the same time, he teaches euphonium in the Escola Professional Metropolitana and the Academia de M&uacute;sica de &Oacute;bidos.</p>
+                    <p class="desc">
+                        É professor e músico profissional. Toca eufónio. Fez os seus estudos na Escola Superior de M&uacute;sica de Lisboa, mas sempre teve curiosidade pelo trombone e pela música Jazz. Toca eufónio na Banda da Força Aérea Portuguesa e trombone na orquestra dos Lisbon Swingers. Ao mesmo tempo, ensina eufónio na Escola Professional Metropolitana e na Academia de M&uacute;sica de &Oacute;bidos.
+                    </p>
                 </div>
                 <img src="img/guys/goncalo_marques.jpg">
             </div>
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Pedro Viana (drums)</p>
-                    <p class="desc">Pedro is an amateur jazz drummer. He started playing drums when he was fifteen and studied at Hot Club de Portugal Jazz School. Ever since he has played with several groups in Portugal including his own quartet (Pedro F Viana Quartet), Dixie Gang and André Carvalho Quintet, as well as abroad with the Ramona Horvath trio in Paris. He currently shares his passion for jazz with Medicine as a Neurologist.</p>
+                    <p class="title">Pedro Viana (bateria)</p>
+                    <p class="desc">
+                        O Pedro &eacute; um baterista amador de Jazz. Come&ccedil;ou por tocar bateria quando tinha 15 anos e estudou na Escola de Jazz do Hot Clune de Portugal. Desde ent&atilde;o tem tocado com v&aacute;rios grupos em Portugal, incluindo o seu pr&oacute;prio quarteto (Pedro F Viana Quartet), Dixie Gang e Quinteto de Andr&eacute; Carvalho, assim como com o Ramona Horvath trio em Paris. Partilha a sua paix&atilde;o pelo Jazz com a Medicina, como neurologista.
+                    </p>
                 </div>
                 <img src="img/guys/pedro_viana.jpg">
             </div>
-
             <div class="item">
                 <div class="tooltip">
                     <i class="fa fa-times"></i>
-                    <p class="title">Minnie Minoprio (guest singer)</p>
+                    <p class="title">Minnie Minoprio (cantora convidada)</p>
                     <a class="www" href="http://www.minnieminoprio.it" target="_blank">minnieminoprio.it</a>
-                    <p class="desc">Born in London in 1942, she is an actress, singer and showgirl, who has worked mainly in Italy, where she still lives. Since 1986, Minnie has devoted herself exclusively to Jazz in concerts, international tours, and recordings. Minnie Minoprio is a "swinger" gifted with extraordinary tone variation from deeply coloured chesty growls to delicate vibrating notes. Together with her husband, Carlo Mezzano (manager and musician), she owns "Cotton Club" in Rome, a venue which hosts the concerts of the most famous international jazz bands.</p>
+                    <p class="desc">
+                        Nasceu em 1942. Minnie &eacute; uma actriz e cantora, cujo trabalho est&aacute; centrado principalmente em It&aacute;lia, onde vive actualmente. Desde 1986, Minnie tem-se dedicado quase exclusivamente a concertos de Jazz, tours internacionais e grava&ccedil;&otilde;es. Minnie Minoprio &eacute; uma &quot;swinger&quot;, possuidora dum maravilhoso timbre vocal. Juntamente com o seu marido, Carlo Mezzano (manager e m&uacute;sico), s&atilde;o propriet&aacute;rios do &quot;Cotton Club&quot; em Roma. Um espa&ccedil;o por onde t&ecirc;m passado as mais famosas bandas internacionais de Jazz.
+                    </p>
                 </div>
                 <img src="img/guys/minnie_minoprio.jpg">
             </div>
         </div>
     </section>
-
-
     <!--
 =============================================================================
     MODULE MUSIC
 ============================================================================= 
  -->
     <section id="module-music">
-        <h1>Listen to our music right here.</h1>
+        <h1>Aqui podem escutar a nossa m&uacute;sica.</h1>
         <div class="wrap">
             <div class="col-1-3">
                 <audio controls preload="none">
@@ -327,51 +340,42 @@
                         Your browser does not support the audio element.
                 </audio>
                 <h2 class="title">Shinny Stockings</h2>
-                <p class="desc">Composed by...</p>
+                <!-- <p class="desc">Composed by...</p> -->
             </div>
             <div class="col-1-3">
                 <audio controls preload="none">
-                    <source src="audio/01.shinny_stockings.mp3" type="audio/mpeg">
+                    <source src="audio/07.come_fly_with_me.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                 </audio>
-                <h2 class="title">Shinny Stockings</h2>
-                <p class="desc">Composed by...</p>
+                <h2 class="title">Come fly with me</h2>
+                <!-- <p class="desc">Composed by...</p> -->
             </div>
             <div class="col-1-3">
                 <audio controls preload="none">
-                    <source src="audio/01.shinny_stockings.mp3" type="audio/mpeg">
+                    <source src="audio/12.all_of_me.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                 </audio>
-                <h2 class="title">Shinny Stockings</h2>
-                <p class="desc">Composed by...</p>
+                <h2 class="title">All of me</h2>
+                <!-- <p class="desc">Composed by...</p> -->
             </div>
             <div class="col-1-3">
                 <audio controls preload="none">
-                    <source src="audio/01.shinny_stockings.mp3" type="audio/mpeg">
+                    <source src="audio/14.hey_ba_ba_re_bop.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                 </audio>
-                <h2 class="title">Shinny Stockings</h2>
-                <p class="desc">Composed by...</p>
+                <h2 class="title">Hey ba ba re bop!!...</h2>
+                <!-- <p class="desc">Composed by...</p> -->
             </div>
             <div class="col-1-3">
                 <audio controls preload="none">
-                    <source src="audio/01.shinny_stockings.mp3" type="audio/mpeg">
+                    <source src="audio/15.sing.sing.sing.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                 </audio>
-                <h2 class="title">Shinny Stockings</h2>
-                <p class="desc">Composed by...</p>
-            </div>
-            <div class="col-1-3">
-                <audio controls preload="none">
-                    <source src="audio/01.shinny_stockings.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                </audio>
-                <h2 class="title">Shinny Stockings</h2>
-                <p class="desc">Composed by...</p>
+                <h2 class="title">Sing, sing, sing!</h2>
+                <!-- <p class="desc">Composed by...</p> -->
             </div>
         </div>
     </section>
-
     <!--
 =============================================================================
     MODULE CONTACTS
@@ -380,7 +384,7 @@
     <section id="module-contacts">
         <div class="col-1-2">
             <div class="text">
-                <h2>For concert booking or other information, you can reach us by using the following contacts:</h2>
+                <h2>Para marca&ccedil;&atilde;o de concertos e outras informa&ccedil;&otilde;es:</h2>
                 <p class="phone">(+351) 939 604 965</p>
                 <p class="email"><a href="mailto:info@lisbonswingers.com">info@lisbonswingers.com</a>
                 </p>
@@ -390,7 +394,6 @@
             <img src="img/img05.jpg" class="img1 animated">
         </div>
     </section>
-
     <!--
 =============================================================================
     MODULE FOOTER
@@ -400,12 +403,27 @@
         <h3>© 2015 Ricardo Quintas - <a href="http://www.ricardoquintas.com" target="_blank">ricardoquintas.com</a>
         </h3>
     </section>
-
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/packery.pkgd.min.js"></script>
     <script src="js/jquery-scrollto.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-56535261-3', 'auto');
+    ga('send', 'pageview');
+    </script>
 </body>
 
 </html>

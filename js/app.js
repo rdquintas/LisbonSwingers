@@ -63,6 +63,7 @@ $(document).ready(function() {
      * EVENT HANDLING
      *=============================================================================*/
 
+    // navigate to: guys
     $("#module-header .guys").on("click", function(e) {
         e.preventDefault();
         if ($("#module-header .toggle").is(":visible")) {
@@ -77,6 +78,7 @@ $(document).ready(function() {
         });
     });
 
+    // navigate to: music
     $("#module-header .music").on("click", function(e) {
         e.preventDefault();
         if ($("#module-header .toggle").is(":visible")) {
@@ -91,6 +93,7 @@ $(document).ready(function() {
         });
     });
 
+    // navigate to: contacts
     $("#module-header .contacts").on("click", function(e) {
         e.preventDefault();
         if ($("#module-header .toggle").is(":visible")) {
@@ -105,6 +108,7 @@ $(document).ready(function() {
         });
     });
 
+    // mobile menu toggle: open
     $("#module-header .toggle .open").on("click", function(e) {
         e.preventDefault();
         $("#module-header .toggle .open").toggleClass('hide-me');
@@ -115,6 +119,7 @@ $(document).ready(function() {
         $("#module-header nav a.contacts").addClass("fadeInUp");
     });
 
+    // mobile menu toggle: close
     $("#module-header .toggle .close").on("click", function(e) {
         e.preventDefault();
         $("#module-header .toggle .open").toggleClass('hide-me');
